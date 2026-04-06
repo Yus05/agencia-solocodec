@@ -1,0 +1,287 @@
+{% extends 'base.html' %}
+
+{% block title %}CRM para Freelancers{% endblock %}
+
+{% block content %}
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-[921px] flex flex-col items-center justify-center pt-20 hero-gradient"
+      >
+        <div class="max-w-5xl mx-auto px-6 text-center">
+          <h1
+            class="font-headline text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[1.1]"
+          >
+            The <span class="text-primary">Atelier</span> CRM
+          </h1>
+          <p
+            class="font-body text-xl md:text-2xl text-on-surface/70 max-w-2xl mx-auto mb-12 leading-relaxed"
+          >
+            Potenciando a freelancers con herramientas de gestión construidas
+            con precisión. Diseñado para ingeniería creativa de alto
+            rendimiento.
+          </p>
+          <div class="flex flex-wrap justify-center gap-6">
+            <button
+              class="cta-gradient px-10 py-4 rounded-full text-on-primary font-bold text-lg hover:shadow-[0_0_20px_rgba(76,215,246,0.3)] transition-all"
+            >
+              Lanzar Proyecto
+            </button>
+            <button
+              class="px-10 py-4 rounded-full border border-outline-variant/30 text-primary font-bold text-lg hover:bg-surface-container-high transition-colors"
+            >
+              Ver Stack Tecnológico
+            </button>
+          </div>
+        </div>
+        <!-- Decorative Element -->
+        <div
+          class="absolute bottom-0 w-full h-px bg-gradient-to-r from-transparent via-outline-variant/20 to-transparent"
+        ></div>
+      </section>
+      <!-- Project Context -->
+      <section class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-20 items-center">
+          <div class="md:col-span-7">
+            <div
+              class="label-md text-primary tracking-widest mb-6 font-bold uppercase"
+            >
+              La Arquitectura
+            </div>
+            <h2
+              class="font-headline text-4xl md:text-5xl font-semibold mb-8 tracking-tight"
+            >
+              El Problema y la Solución del Freelancer Moderno
+            </h2>
+            <p class="text-body-lg text-on-surface/80 mb-8 leading-relaxed">
+              Los CRM estándar están diseñados para equipos de ventas, no para
+              creadores. Están saturados de funciones que nunca usarás y carecen
+              de la precisión estética que tu flujo de trabajo merece.
+            </p>
+            <p class="text-body-lg text-on-surface/80 leading-relaxed">
+              The Atelier CRM proporciona una experiencia modular de alta
+              fidelidad que trata la gestión de clientes como arquitectura
+              digital. Sin excesos, solo puro rendimiento.
+            </p>
+          </div>
+          <div class="md:col-span-5 relative group">
+            <div
+              class="absolute -inset-4 bg-primary/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"
+            ></div>
+            <div
+              class="relative bg-surface-container-low rounded-xl p-8 border border-outline-variant/10"
+            >
+              <img
+                alt="Líneas arquitectónicas abstractas y wireframes brillando en luz cian representando la planificación y diseño de software de alta tecnología"
+                class="w-full h-auto rounded-lg grayscale hover:grayscale-0 transition-all duration-700"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBew0n1AJ2L1tpVHMUKCsqhfpaA4Sfzayfha0txdj90pnRU7ZGHdd6Jt2shaC00_Xg_t8Nu-xmKEX2LVz6_N3sDbDDHjoO1LJ6AeOQ-uahx3CyMzc9L26HPhoiG2RpiGxW3yl8Tmp-_EGHbyP0VBuUUP3YINLNx7acuJ7bxpL-azu_nKvpq7i3urSMMbi6a8RYDTNw0qhphCjnxMJfbLBhOKv_OGiNIA7HB05vSTLuxhOfVfoP61xrffLDxEatyUgUbBBz3DMJ_v54"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Core Features Grid -->
+      <section class="py-32 bg-surface-container-low/30 relative">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="mb-20 text-center">
+            <h2 class="font-headline text-4xl font-bold mb-4">
+              Ingeniería de Precisión
+            </h2>
+            <p class="text-on-surface/60 max-w-xl mx-auto">
+              Herramientas enfocadas para profesionales que valoran el tiempo y
+              la claridad.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div
+              class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group"
+            >
+              <div
+                class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl"
+                  >diversity_3</span
+                >
+              </div>
+              <h3 class="font-headline text-xl font-bold mb-4">
+                Seguimiento del Ciclo de Vida del Cliente
+              </h3>
+              <p class="text-on-surface/60 leading-relaxed">
+                Visualiza cada punto de contacto, desde el contacto inicial
+                hasta la entrega final, con una interfaz fluida basada en
+                cronogramas.
+              </p>
+              <div
+                class="mt-8 h-1 w-12 bg-primary/30 rounded-full group-hover:w-full transition-all duration-500"
+              ></div>
+            </div>
+            <!-- Feature 2 -->
+            <div
+              class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group"
+            >
+              <div
+                class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl"
+                  >receipt_long</span
+                >
+              </div>
+              <h3 class="font-headline text-xl font-bold mb-4">
+                Facturación Automatizada
+              </h3>
+              <p class="text-on-surface/60 leading-relaxed">
+                Convierte las horas registradas en hermosas facturas PDF
+                personalizadas con un solo clic. Soporte fiscal global incluido.
+              </p>
+              <div
+                class="mt-8 h-1 w-12 bg-primary/30 rounded-full group-hover:w-full transition-all duration-500"
+              ></div>
+            </div>
+            <!-- Feature 3 -->
+            <div
+              class="bg-surface-container-high p-10 rounded-xl hover:translate-y-[-8px] transition-all duration-300 group"
+            >
+              <div
+                class="w-14 h-14 bg-surface-container-highest rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl"
+                  >hub</span
+                >
+              </div>
+              <h3 class="font-headline text-xl font-bold mb-4">
+                Centro de Proyectos
+              </h3>
+              <p class="text-on-surface/60 leading-relaxed">
+                Un centro de control central para archivos, comunicación y
+                gestión de tareas. Todo indexado y fácil de buscar.
+              </p>
+              <div
+                class="mt-8 h-1 w-12 bg-primary/30 rounded-full group-hover:w-full transition-all duration-500"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Technical Architecture -->
+      <section class="py-32 px-6 max-w-7xl mx-auto text-center">
+        <div class="mb-16">
+          <div class="label-md text-primary font-bold mb-4">
+            EL STACK TECNOLÓGICO
+          </div>
+          <h2 class="font-headline text-4xl font-bold">
+            El Enfoque del Arquitecto Digital
+          </h2>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 mb-20">
+          <span
+            class="px-6 py-2 bg-surface-container-highest rounded-md label-md border border-outline-variant/10"
+            >React 18</span
+          >
+          <span
+            class="px-6 py-2 bg-surface-container-highest rounded-md label-md border border-outline-variant/10"
+            >TypeScript</span
+          >
+          <span
+            class="px-6 py-2 bg-surface-container-highest rounded-md label-md border border-outline-variant/10"
+            >GraphQL</span
+          >
+          <span
+            class="px-6 py-2 bg-surface-container-highest rounded-md label-md border border-outline-variant/10"
+            >Node.js</span
+          >
+          <span
+            class="px-6 py-2 bg-surface-container-highest rounded-md label-md border border-outline-variant/10"
+            >PostgreSQL</span
+          >
+          <span
+            class="px-6 py-2 bg-surface-container-highest rounded-md label-md border border-outline-variant/10"
+            >Tailwind CSS</span
+          >
+        </div>
+        <div class="grid md:grid-cols-2 gap-12 text-left">
+          <div
+            class="bg-surface-container-lowest p-8 rounded-xl border border-outline-variant/15 font-mono text-sm leading-relaxed overflow-hidden relative"
+          >
+            <div class="flex gap-2 mb-6">
+              <div class="w-3 h-3 rounded-full bg-red-500/30"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500/30"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500/30"></div>
+            </div>
+            <pre
+              class="text-tertiary"
+            ><code><span class="text-secondary opacity-50">interface</span> <span class="text-primary">ProjectModel</span> {
+  id: <span class="text-on-surface">string</span>;
+  client: <span class="text-on-surface">Client</span>;
+  status: <span class="text-on-surface">'active' | 'archived'</span>;
+  milestones: <span class="text-on-surface">Milestone[]</span>;
+  
+  <span class="text-secondary opacity-50">// Optimizado para renderizado rápido</span>
+  renderArchitecture() {
+    <span class="text-secondary opacity-50">return</span> <span class="text-primary">AtelierEngine</span>.build(<span class="text-secondary">this</span>);
+  }
+}</code></pre>
+          </div>
+          <div class="flex flex-col justify-center">
+            <h3 class="font-headline text-2xl font-bold mb-6">
+              Construido para el Rendimiento
+            </h3>
+            <p class="text-on-surface/70 mb-6">
+              Utilizamos una arquitectura estrictamente tipada para garantizar
+              la integridad de los datos y cero errores en tiempo de ejecución.
+              La capa GraphQL minimiza la sobrecarga de red, lo que resulta en
+              interacciones del dashboard inferiores a 100 ms.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-lg"
+                  >check_circle</span
+                >
+                <span class="text-sm font-semibold text-on-surface/80"
+                  >Flujo de datos de extremo a extremo seguro</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-lg"
+                  >check_circle</span
+                >
+                <span class="text-sm font-semibold text-on-surface/80"
+                  >Colaboración en tiempo real vía WebSockets</span
+                >
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-lg"
+                  >check_circle</span
+                >
+                <span class="text-sm font-semibold text-on-surface/80"
+                  >Despliegue en el borde para optimización de latencia
+                  global</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Call to Action -->
+      <section class="py-32 relative overflow-hidden">
+        <div class="absolute inset-0 hero-gradient opacity-50"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+          <h2 class="font-headline text-4xl md:text-5xl font-bold mb-8">
+            ¿Listo para construir tu próximo hito?
+          </h2>
+          <p class="text-xl text-on-surface/70 mb-12">
+            Únete al colectivo de profesionales que diseñan su futuro con The
+            Atelier CRM.
+          </p>
+          <button
+            class="cta-gradient px-12 py-5 rounded-full text-on-primary font-bold text-xl hover:scale-105 transition-transform"
+          >
+            Comienza tu Prueba Gratuita
+          </button>
+        </div>
+      </section>
+    </main>
+{% endblock %}

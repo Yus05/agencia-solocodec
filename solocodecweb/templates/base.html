@@ -1,0 +1,379 @@
+<!doctype html>
+
+<html class="dark" lang="es">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SoloCodec | {% block title %}{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#31394d",
+              "surface-container-high": "#222a3d",
+              "on-primary-fixed": "#001f26",
+              "on-tertiary-fixed-variant": "#004e5a",
+              "primary-container": "#001b21",
+              background: "#0b1326",
+              "surface-container-highest": "#2d3449",
+              "secondary-container": "#3c4a5e",
+              "on-tertiary-fixed": "#001f25",
+              "on-primary": "#003640",
+              "tertiary-fixed-dim": "#2fd9f4",
+              "surface-container-lowest": "#060e20",
+              "tertiary-fixed": "#a2eeff",
+              "primary-fixed": "#acedff",
+              "on-tertiary": "#00363e",
+              "tertiary-container": "#001b20",
+              "on-tertiary-container": "#008ea1",
+              "on-secondary-fixed-variant": "#3a485c",
+              "on-primary-container": "#008da5",
+              "secondary-fixed": "#d5e3fd",
+              outline: "#909097",
+              "secondary-fixed-dim": "#b9c7e0",
+              "on-error": "#690005",
+              "on-secondary": "#233144",
+              "surface-dim": "#0b1326",
+              "surface-variant": "#2d3449",
+              "inverse-primary": "#00687a",
+              surface: "#0b1326",
+              tertiary: "#2fd9f4",
+              "on-primary-fixed-variant": "#004e5c",
+              "surface-tint": "#4cd7f6",
+              error: "#ffb4ab",
+              primary: "#4cd7f6",
+              "on-surface-variant": "#c6c6cd",
+              "inverse-surface": "#dae2fd",
+              "surface-container-low": "#131b2e",
+              "on-secondary-fixed": "#0d1c2f",
+              "error-container": "#93000a",
+              "inverse-on-surface": "#283044",
+              "on-background": "#dae2fd",
+              "on-secondary-container": "#abb9d2",
+              "surface-container": "#171f33",
+              "on-error-container": "#ffdad6",
+              "outline-variant": "#45464d",
+              "on-surface": "#dae2fd",
+              "primary-fixed-dim": "#4cd7f6",
+              secondary: "#b9c7e0",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .tonal-shift {
+        background-color: #131b2e;
+      }
+      .glass-panel {
+        background: rgba(34, 42, 61, 0.4);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .kinetic-gradient-text {
+        background: linear-gradient(135deg, #4cd7f6 0%, #008da5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0b1326]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 h-24">
+      <div class="text-2xl font-bold tracking-tighter text-[#dae2fd] font-headline">
+        <a href="/">
+          KINETIC_ARCH
+        </a>
+      </div>
+      <!-- enlaces del menu nav -->
+      <div class="hidden md:flex gap-10 items-center">
+        <!-- servicio con submenu -->
+        <div class="relative group">
+          <a href="{{ url_for('pages.servicios') }}"
+            class="font-headline transition-colors pb-1 flex items-center gap-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint and 'pages.servicio' in request.endpoint else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
+            Servicios
+            <span class="material-symbols-outlined text-sm">expand_more</span>
+          </a>
+
+          <div class="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+            <div class="bg-[#131b2e] border border-[#45464d]/20 rounded-xl shadow-2xl py-3 px-2 backdrop-blur-xl">
+              <a href="{{ url_for('pages.servicio_diseno') }}" 
+                class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
+                Diseño & Desarrollo Web
+              </a>
+              
+              <a href="{{ url_for('pages.servicio_desarrollo') }}" 
+                class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
+                Desarrollo Aplicaciones Web
+              </a>
+              
+              <a href="{{ url_for('pages.servicio_automatizaciones') }}" 
+                class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
+                Automatizaciones IA
+              </a>
+              
+              <a href="{{ url_for('pages.servicio_mantenimiento') }}" 
+                class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
+                Mantenimiento & Soporte
+              </a>
+          </div>
+        </div>
+      </div>
+      <div class="relative group">
+        <a href="{{ url_for('pages.proyectos') }}"
+          class="font-headline transition-colors pb-1 flex items-center gap-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint and 'pages.proyecto' in request.endpoint else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
+          Proyectos
+          <span class="material-symbols-outlined text-sm">expand_more</span>
+        </a>
+        <div class="absolute left-0 mt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+          <div class="bg-[#131b2e] border border-[#45464d]/20 rounded-xl shadow-2xl py-3 px-2 backdrop-blur-xl">
+            
+            <a href="{{ url_for('pages.proyecto_agencia') }}" 
+              class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
+              Agencia Diseño Web
+            </a>
+            
+            <a href="{{ url_for('pages.proyecto_subscripcion') }}" 
+              class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
+              Agencia Web por Suscripción
+            </a>
+            
+            <a href="{{ url_for('pages.proyecto_api') }}" 
+              class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
+              API Medi Schedule
+            </a>
+            
+            <a href="{{ url_for('pages.proyecto_crm') }}" 
+              class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
+              CRM para Freelancers
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="{{ url_for('pages.contacto') }}"
+        class="font-headline transition-colors pb-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint == 'pages.contacto' else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
+          Contacto
+      </a>
+      </div>
+      <button
+        class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary-fixed px-8 py-3 rounded-full font-bold tracking-tight hover:shadow-[0_0_20px_rgba(76,215,246,0.3)] transition-all duration-300 active:scale-95"
+      >
+        Cotizar
+      </button>
+    </nav>
+
+
+    <!-- <main></main> -->
+    {% block content %}
+    {% endblock %}
+
+
+    <!-- Footer -->
+    <footer class="bg-[#060e20] w-full border-t border-[#45464d]/15">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-16 px-6 md:px-12 py-20 max-w-7xl mx-auto"
+      >
+        <div class="md:col-span-1">
+          <span
+            class="text-xl font-black text-[#4cd7f6] mb-4 block font-headline"
+            >KINETIC_ARCH</span
+          >
+          <p class="text-[#dae2fd]/50 text-sm leading-relaxed mb-8">
+            Ingeniería de Precisión Digital. Diseñamos y construimos software de
+            alto rendimiento para las empresas más ambiciosas del mundo.
+          </p>
+          <div class="flex gap-4">
+            <a
+              aria-label="LinkedIn"
+              class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-xl">link</span>
+            </a>
+            <a
+              aria-label="GitHub"
+              class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-xl">terminal</span>
+            </a>
+            <a
+              aria-label="Instagram"
+              class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-xl"
+                >photo_camera</span
+              >
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-[#dae2fd] font-bold mb-6 font-headline">
+            Capacidades
+          </h4>
+          <ul class="space-y-4 text-sm font-body">
+            <li>
+              <a
+                class="text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+                href="#"
+                >Desarrollo Web</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+                href="#"
+                >Ingeniería Móvil</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+                href="#"
+                >Soluciones Cloud</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+                href="#"
+                >Arquitectura UI/UX</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#dae2fd] font-bold mb-6 font-headline">Empresa</h4>
+          <ul class="space-y-4 text-sm font-body">
+            <li>
+              <a
+                class="text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+                href="#"
+                >Portafolio</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+                href="#"
+                >Nuestro Proceso</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+                href="#"
+                >Carreras</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#dae2fd]/50 hover:text-[#4cd7f6] transition-colors"
+                href="#"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-[#dae2fd] font-bold mb-6 font-headline">
+            Boletín Informativo
+          </h4>
+          <p class="text-[#dae2fd]/50 text-sm mb-6">
+            Mantente al día con las últimas tendencias en ingeniería digital.
+          </p>
+          <div class="relative">
+            <input
+              class="w-full bg-surface-container-high border-none rounded-xl px-4 py-3 text-sm focus:ring-1 focus:ring-primary outline-none text-[#dae2fd]"
+              placeholder="Correo electrónico"
+              type="email"
+            />
+            <button
+              class="absolute right-2 top-2 p-1.5 bg-primary rounded-lg text-on-primary-fixed"
+            >
+              <span
+                class="material-symbols-outlined text-sm"
+                data-icon="arrow_forward"
+                >arrow_forward</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto px-12 py-8 border-t border-outline-variant/10 text-center"
+      >
+        <p
+          class="text-[#dae2fd]/30 text-xs font-body uppercase tracking-[0.2em]"
+        >
+          © 2024 Kinetic Architecture. Ingeniería de Precisión Digital.
+        </p>
+      </div>
+    </footer>
+    <button
+      aria-label="Volver arriba"
+      class="fixed bottom-8 right-8 z-[60] w-14 h-14 rounded-full bg-primary text-on-primary-fixed flex items-center justify-center shadow-xl hover:shadow-[0_0_30px_rgba(76,215,246,0.4)] backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 active:scale-95 group"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <span class="material-symbols-outlined group-hover:animate-bounce-slow"
+        >north</span
+      >
+    </button>
+    <a
+      aria-label="Chatear en WhatsApp"
+      class="fixed bottom-8 left-8 z-[60] w-14 h-14 rounded-full bg-surface-container-high/60 backdrop-blur-md border border-primary/30 text-primary flex items-center justify-center shadow-lg hover:shadow-[0_0_20px_rgba(76,215,246,0.3)] hover:border-primary transition-all duration-300 hover:-translate-y-1 active:scale-95 group"
+      href="#"
+    >
+      <span
+        class="material-symbols-outlined text-2xl group-hover:scale-110 transition-transform"
+        style="
+          font-variation-settings:
+            &quot;FILL&quot; 0,
+            &quot;wght&quot; 400,
+            &quot;GRAD&quot; 0,
+            &quot;opsz&quot; 24;
+        "
+        >forum</span
+      >
+      <span class="absolute -top-1 -right-1 flex h-3 w-3">
+        <span
+          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+        ></span>
+        <span
+          class="relative inline-flex rounded-full h-3 w-3 bg-primary"
+        ></span>
+      </span>
+    </a>
+  </body>
+</html>

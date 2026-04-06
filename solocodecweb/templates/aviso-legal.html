@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+
+{% block title %}Aviso Legal{% endblock %}
+
+{% block content %}
+    <main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+      <!-- Hero Header -->
+      <section class="mb-20">
+        <div
+          class="inline-flex items-center gap-2 mb-6 px-3 py-1 rounded-md bg-surface-container-highest text-primary font-bold text-xs tracking-widest uppercase"
+        >
+          <span class="material-symbols-outlined text-sm">gavel</span>
+          Cumplimiento y Estándares
+        </div>
+        <h1
+          class="text-5xl md:text-7xl font-bold text-on-background tracking-[-0.02em] leading-tight mb-8"
+        >
+          Aviso Legal
+        </h1>
+        <p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+          La transparencia es el pilar de la confianza. Este aviso detalla el
+          marco legal que rige nuestra presencia digital y nuestros servicios de
+          arquitectura de software.
+        </p>
+      </section>
+      <!-- Identification Bento Grid -->
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-20">
+        <div
+          class="lg:col-span-2 bg-surface-container-high rounded-xl p-10 flex flex-col justify-between group overflow-hidden relative"
+        >
+          <div class="relative z-10">
+            <h2 class="text-2xl font-semibold mb-6 flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">domain</span>
+              Identificación y Titularidad
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <p
+                  class="text-xs uppercase tracking-widest text-outline mb-2 font-bold"
+                >
+                  Nombre de la Empresa
+                </p>
+                <p class="text-lg font-medium text-on-surface mb-6">
+                  Kinetic Architecture Software S.L.
+                </p>
+                <p
+                  class="text-xs uppercase tracking-widest text-outline mb-2 font-bold"
+                >
+                  NIF (IVA)
+                </p>
+                <p class="text-lg font-medium text-on-surface">ESA00000000</p>
+              </div>
+              <div>
+                <p
+                  class="text-xs uppercase tracking-widest text-outline mb-2 font-bold"
+                >
+                  Domicilio Social
+                </p>
+                <address
+                  class="not-italic text-lg font-medium text-on-surface leading-relaxed"
+                >
+                  Innovation Drive 42, Suite 201<br />
+                  28001 Madrid, Spain
+                </address>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute -bottom-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity"
+          >
+            <span
+              class="material-symbols-outlined text-[240px]"
+              style="font-variation-settings: &quot;FILL&quot; 1"
+              >architecture</span
+            >
+          </div>
+        </div>
+        <div
+          class="bg-primary/5 rounded-xl p-10 border border-primary/10 flex flex-col justify-center"
+        >
+          <h3 class="text-xl font-bold text-primary mb-6">Contacto Directo</h3>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary mt-1"
+                >alternate_email</span
+              >
+              <div>
+                <p class="text-sm text-outline">Consultas Generales</p>
+                <p class="font-medium text-on-surface">hello@kinetic-arch.io</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary mt-1"
+                >call</span
+              >
+              <div>
+                <p class="text-sm text-outline">Soporte Telefónico</p>
+                <p class="font-medium text-on-surface">+34 910 00 00 00</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-primary mt-1"
+                >encrypted</span
+              >
+              <div>
+                <p class="text-sm text-outline">Legal y Privacidad</p>
+                <p class="font-medium text-on-surface">legal@kinetic-arch.io</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Terms & IP Split Layout -->
+      <section class="flex flex-col md:flex-row gap-20 mb-20">
+        <div class="space-y-8 w-full">
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-symbols-outlined text-primary">rule</span>
+              <h2 class="text-2xl font-semibold">Propiedad Intelectual</h2>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed">
+              Kinetic Architecture es titular de todos los derechos de propiedad
+              intelectual e industrial de su página web, así como de los
+              elementos contenidos en la misma (código, diseño, logotipos y
+              documentación técnica específica). Cualquier uso no autorizado
+              será considerado un incumplimiento grave de los derechos de
+              propiedad intelectual o industrial del autor.
+            </p>
+            <ul class="mt-6 space-y-4">
+              <li class="flex gap-3 text-sm text-on-surface-variant">
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                El Usuario se compromete a hacer un uso adecuado de los
+                contenidos y servicios de conformidad con la legislación
+                vigente.
+              </li>
+              <li class="flex gap-3 text-sm text-on-surface-variant">
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >check_circle</span
+                >
+                Queda terminantemente prohibida la reproducción, distribución o
+                transformación de los contenidos sin la debida autorización.
+              </li>
+            </ul>
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="material-symbols-outlined text-primary"
+                >copyright</span
+              >
+              <h2 class="text-2xl font-semibold">Propiedad Intelectual</h2>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed">
+              Kinetic Architecture es titular de todos los derechos de propiedad
+              intelectual e industrial de su página web, así como de los
+              elementos contenidos en la misma (código, diseño, logotipos y
+              documentación técnica específica). Cualquier uso no autorizado
+              será considerado un incumplimiento grave de los derechos de
+              propiedad intelectual o industrial del autor.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Liability & Law -->
+      <section
+        class="grid grid-cols-1 md:grid-cols-2 gap-12 py-16 bg-surface-container-low/50 rounded-2xl px-12"
+      >
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary"
+              >verified_user</span
+            >
+            <h2 class="text-2xl font-semibold">
+              Limitación de Responsabilidad
+            </h2>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed mb-6">
+            Si bien nos esforzamos por alcanzar una precisión digital del 100%,
+            Kinetic Architecture no se hace responsable, en ningún caso, de los
+            daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a
+            título enunciativo: errores u omisiones en los contenidos, falta de
+            disponibilidad del portal o la transmisión de virus o programas
+            maliciosos en los contenidos, a pesar de haber adoptado todas las
+            medidas tecnológicas necesarias para evitarlo.
+          </p>
+          <div
+            class="p-4 bg-surface-container-highest/30 rounded-lg border-l-4 border-primary"
+          >
+            <p class="text-sm italic text-on-surface">
+              La agencia se reserva el derecho de efectuar sin previo aviso las
+              modificaciones que considere oportunas en su portal.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary">balance</span>
+            <h2 class="text-2xl font-semibold">Ley Aplicable</h2>
+          </div>
+          <p class="text-on-surface-variant leading-relaxed mb-8">
+            La relación entre Kinetic Architecture y el Usuario se regirá por la
+            normativa española vigente y cualquier controversia se someterá a
+            los Juzgados y Tribunales de la ciudad de Madrid, España, salvo que
+            la ley aplicable disponga lo contrario.
+          </p>
+          <div class="flex items-center gap-4">
+            <div class="flex -space-x-2">
+              <div
+                class="w-10 h-10 rounded-full bg-primary-container border border-primary flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >language</span
+                >
+              </div>
+              <div
+                class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-on-surface text-sm"
+                  >security</span
+                >
+              </div>
+            </div>
+            <p class="text-sm font-medium text-outline">
+              Cumple con la Ley de Servicios Digitales de la UE
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+{% endblock %}

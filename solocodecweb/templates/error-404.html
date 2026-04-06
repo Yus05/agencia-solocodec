@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}Error 404{% endblock %}
+
+{% block content %}
+    <main class="relative min-h-screen flex items-center justify-center pt-20">
+      <!-- Background Architectural Elements -->
+      <div class="absolute inset-0 blueprint-grid pointer-events-none"></div>
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-[radial-gradient(circle_at_center,rgba(76,215,246,0.08)_0%,transparent_70%)] pointer-events-none"
+      ></div>
+      <div
+        class="max-w-7xl mx-auto px-8 w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Content Side -->
+        <div class="flex flex-col items-start space-y-8">
+          <div
+            class="inline-flex items-center px-4 py-1.5 rounded-md bg-surface-container-highest border border-outline-variant/15"
+          >
+            <span
+              class="text-xs font-semibold tracking-widest text-primary uppercase font-label"
+              >ERROR 404</span
+            >
+          </div>
+          <h1
+            class="font-headline text-[clamp(3rem,8vw,5.5rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-on-surface"
+          >
+            Página No <br />
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
+              >Encontrada</span
+            >
+          </h1>
+          <p
+            class="text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed font-light"
+          >
+            La estructura que buscas ha sido desplazada o ya no forma parte de
+            nuestro ecosistema digital. Regresa a los cimientos para continuar
+            la exploración.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a
+              class="inline-flex items-center gap-3 bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-[0_0_25px_rgba(76,215,246,0.3)] transition-all active:scale-95 group"
+              href="/"
+            >
+              Volver al Inicio
+              <span
+                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </div>
+        <!-- Visual Architectural Side -->
+        <div class="relative group">
+          <!-- Fragmented Geometric structure visualization -->
+          <div class="relative aspect-square w-full max-w-[500px] mx-auto">
+            <!-- Glass Layers for depth -->
+            <div
+              class="absolute inset-0 bg-surface-container-high/40 backdrop-blur-3xl rounded-[2rem] transform rotate-6 border border-outline-variant/10"
+            ></div>
+            <div
+              class="absolute inset-0 bg-surface-container-low/60 backdrop-blur-xl rounded-[2rem] transform -rotate-3 border border-outline-variant/10"
+            ></div>
+            <!-- Main Image Overlay -->
+            <div
+              class="absolute inset-4 rounded-xl overflow-hidden shadow-2xl shadow-background"
+            >
+              <img
+                alt="Blueprint fragment"
+                class="w-full h-full object-cover grayscale opacity-60 mix-blend-screen"
+                data-alt="Technical architectural blueprint of a modern skyscraper with fragmented geometric lines and glowing cyan circuit paths on a deep navy background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7K57YzQ3dDaZzrZInBMP7mM-ez3eBRiCGfzwQX6OMZl4UDY72Y1Dao8TcE3RW9bX4Xrud4t9ynM8SkiQvWU2Pp6iQ6kr2mJ0RY9vSfA5ygNORth0Q8O0hZYRuvY7J_UTuqj0HER_WoPHBBu0KALozSS6DNNAMoYmjqcsDU94DQ96nAs1Vp6LWIQleHcXNw5eQz5K9PaATnkv6eGKxuGqyYPClP_4oL0rb6iVxp6hQaYhET1Ym5aB6KTkPOj57IPoll2XTZH7wkR0"
+              />
+              <!-- Overlay 404 large text -->
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span
+                  class="text-[12rem] font-extrabold text-primary/10 select-none font-headline tracking-tighter"
+                  >404</span
+                >
+              </div>
+            </div>
+            <!-- Decorative Technical Accents -->
+            <div
+              class="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-primary/40 rounded-tr-xl"
+            ></div>
+            <div
+              class="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-primary/40 rounded-bl-xl"
+            ></div>
+            <!-- Metadata Chips -->
+            <div
+              class="absolute top-10 -left-8 bg-surface-container-highest px-4 py-2 rounded-lg border border-outline-variant/20 shadow-xl"
+            >
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-error"></span>
+                <span
+                  class="text-[10px] font-bold tracking-tighter font-label uppercase"
+                  >SYS_ERR: NULL_POINTER</span
+                >
+              </div>
+            </div>
+            <div
+              class="absolute bottom-1/4 -right-12 bg-surface-container-highest px-4 py-2 rounded-lg border border-outline-variant/20 shadow-xl"
+            >
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-sm"
+                  >architecture</span
+                >
+                <span
+                  class="text-[10px] font-bold tracking-tighter font-label uppercase"
+                  >STRUCT_DECOUPLED</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,373 @@
+{% extends 'base.html' %}
+
+{% block title %}Servicios Agencia de Desarrollo de Software en Caracas{% endblock %}
+
+{% block content %}
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section
+        class="relative px-6 md:px-12 py-20 md:py-32 overflow-hidden bg-surface"
+      >
+        <div class="max-w-7xl mx-auto relative z-10">
+          <span
+            class="label-md uppercase tracking-[0.2em] text-primary mb-6 block font-label"
+            >CAPACIDADES PRINCIPALES</span
+          >
+          <h1
+            class="text-5xl md:text-7xl font-bold font-headline tracking-tighter text-on-surface mb-8 max-w-4xl leading-[1.1]"
+          >
+            Ingeniería
+            <span class="kinetic-gradient-text">Fronteras Digitales</span> con
+            Precisión Arquitectónica.
+          </h1>
+          <p
+            class="body-lg text-on-surface-variant max-w-2xl leading-relaxed mb-12"
+          >
+            Nos especializamos en soluciones digitales de alto rendimiento que
+            cierran la brecha entre la ingeniería técnica compleja y las
+            experiencias de usuario intuitivas.
+          </p>
+        </div>
+        <!-- Decorative Element -->
+        <div
+          class="absolute top-1/2 -right-24 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]"
+        ></div>
+      </section>
+      <!-- Services Grid (Bento Style) -->
+      <section class="px-6 md:px-12 py-20 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- Custom Software -->
+            <div
+              class="md:col-span-8 group relative overflow-hidden bg-surface-container-high rounded-xl p-8 md:p-12 transition-all duration-500 hover:bg-surface-bright"
+            >
+              <div class="relative z-10">
+                <span
+                  class="material-symbols-outlined text-primary text-4xl mb-6"
+                  data-icon="terminal"
+                  >terminal</span
+                >
+                <h3
+                  class="text-3xl font-bold font-headline text-on-surface mb-4"
+                >
+                  Software a Medida
+                </h3>
+                <p
+                  class="text-on-surface-variant max-w-lg mb-8 leading-relaxed"
+                >
+                  Arquitecturas backend escalables, seguras y robustas diseñadas
+                  para manejar el flujo de datos de nivel empresarial.
+                  Construimos los motores que impulsan a los líderes de la
+                  industria.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-surface-container-highest rounded-md text-xs font-semibold text-primary font-label"
+                    >Nativo en la Nube</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-surface-container-highest rounded-md text-xs font-semibold text-primary font-label"
+                    >Microservicios</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-surface-container-highest rounded-md text-xs font-semibold text-primary font-label"
+                    >Rust / Go / Python</span
+                  >
+                </div>
+              </div>
+              <div
+                class="absolute bottom-0 right-0 w-64 h-64 opacity-10 group-hover:opacity-20 transition-opacity"
+              >
+                <img
+                  alt="Software Architecture"
+                  class="w-full h-full object-cover"
+                  data-alt="abstract digital architecture grid pattern with glowing cyan nodes dark navy background high tech precision"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRHhoWfTKrdYCLdOfuACrfTBa0zTtntoKpC712YJ1Oq6Lfz2T_wMKYyoNX_kg6PDJ6qgDWHIWUaV2da6DMfdyEePdjdbZZtRUmv2DAbYQTTsKv-Nm2zDtKP9wBLGycR2hYvFr0gOAJLfRKKreL9kOYK7SzdIxIKuK2o2puxB1C8yjULiB3Z_8HvsocFjj8QePrmvL7m1ztHuRWhGn95kgJF3kF_uRRILxeTo-ev7BF8I0lPq5R2saV_IG3OKi_69zajAHDoJElthQ"
+                />
+              </div>
+            </div>
+            <!-- Mobile Apps -->
+            <div
+              class="md:col-span-4 bg-surface-container-high rounded-xl p-8 transition-all duration-500 hover:bg-surface-bright flex flex-col justify-between border border-outline-variant/15"
+            >
+              <div>
+                <span
+                  class="material-symbols-outlined text-primary text-4xl mb-6"
+                  data-icon="smartphone"
+                  >smartphone</span
+                >
+                <h3
+                  class="text-2xl font-bold font-headline text-on-surface mb-4"
+                >
+                  Aplicaciones Móviles
+                </h3>
+                <p class="text-on-surface-variant leading-relaxed">
+                  Aplicaciones nativas y multiplataforma inmersivas que ofrecen
+                  un rendimiento de clase de escritorio en la palma de su mano.
+                </p>
+              </div>
+              <div class="mt-8">
+                <ul class="space-y-3">
+                  <li
+                    class="flex items-center gap-3 text-sm text-on-surface-variant"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-sm"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    iOS y Android
+                  </li>
+                  <li
+                    class="flex items-center gap-3 text-sm text-on-surface-variant"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-sm"
+                      data-icon="check_circle"
+                      >check_circle</span
+                    >
+                    React Native / Flutter
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- UX/UI Design -->
+            <div
+              class="md:col-span-5 bg-surface-container-high rounded-xl p-8 transition-all duration-500 hover:bg-surface-bright border border-outline-variant/15"
+            >
+              <span
+                class="material-symbols-outlined text-primary text-4xl mb-6"
+                data-icon="architecture"
+                >architecture</span
+              >
+              <h3 class="text-2xl font-bold font-headline text-on-surface mb-4">
+                Diseño UX/UI
+              </h3>
+              <p class="text-on-surface-variant leading-relaxed mb-6">
+                Donde la estética se encuentra con la función. Aplicamos
+                sistemas de diseño rigurosos para crear interfaces que sean tan
+                hermosas como usables.
+              </p>
+              <div
+                class="h-32 bg-surface-container-lowest rounded-lg border border-outline-variant/10 flex items-center justify-center"
+              >
+                <span
+                  class="text-xs text-outline tracking-widest uppercase font-label"
+                  >Boceto del Sistema Visual</span
+                >
+              </div>
+            </div>
+            <!-- Legacy Modernization -->
+            <div
+              class="md:col-span-7 bg-surface-container-high rounded-xl p-8 md:p-12 transition-all duration-500 hover:bg-surface-bright relative group overflow-hidden"
+            >
+              <div
+                class="flex flex-col md:flex-row gap-8 items-start relative z-10"
+              >
+                <div class="flex-1">
+                  <span
+                    class="material-symbols-outlined text-primary text-4xl mb-6"
+                    data-icon="history_edu"
+                    >history_edu</span
+                  >
+                  <h3
+                    class="text-2xl font-bold font-headline text-on-surface mb-4"
+                  >
+                    Modernización de Sistemas Heredados
+                  </h3>
+                  <p class="text-on-surface-variant leading-relaxed">
+                    Transformando sistemas monolíticos obsoletos en
+                    arquitecturas ágiles y listas para la nube sin interrumpir
+                    sus operaciones comerciales en curso.
+                  </p>
+                </div>
+                <div
+                  class="w-full md:w-1/3 aspect-square rounded-lg bg-surface-container-lowest/50 backdrop-blur-sm p-4 flex flex-col justify-center gap-2"
+                >
+                  <div
+                    class="h-2 w-full bg-primary/20 rounded-full overflow-hidden"
+                  >
+                    <div class="h-full bg-primary w-3/4"></div>
+                  </div>
+                  <div
+                    class="h-2 w-full bg-primary/20 rounded-full overflow-hidden"
+                  >
+                    <div class="h-full bg-primary w-1/2"></div>
+                  </div>
+                  <div
+                    class="h-2 w-full bg-primary/20 rounded-full overflow-hidden"
+                  >
+                    <div class="h-full bg-primary w-5/6"></div>
+                  </div>
+                  <p
+                    class="text-[10px] text-center text-outline mt-2 font-label"
+                  >
+                    TIEMPO DE ACTIVIDAD DEL SISTEMA: 99.9%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Process Roadmap -->
+      <section class="px-6 md:px-12 py-32 bg-surface">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-24">
+            <span
+              class="label-md uppercase tracking-[0.2em] text-primary mb-4 block font-label"
+              >LA METODOLOGÍA</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-bold font-headline text-on-surface tracking-tight"
+            >
+              Nuestra Hoja de Ruta Arquitectónica
+            </h2>
+          </div>
+          <div class="relative">
+            <!-- Connector Line (Desktop) -->
+            <div
+              class="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"
+            ></div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+              <!-- Step 1 -->
+              <div
+                class="flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <div
+                  class="w-24 h-24 rounded-full bg-surface-container-high border border-primary/20 flex items-center justify-center mb-8 relative group"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-500"
+                  ></div>
+                  <span class="text-3xl font-black text-primary font-headline"
+                    >01</span
+                  >
+                </div>
+                <h4
+                  class="text-xl font-bold text-on-surface mb-3 font-headline"
+                >
+                  Descubrimiento
+                </h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">
+                  Inmersión profunda en los requisitos técnicos, las necesidades
+                  de las partes interesadas y los objetivos comerciales a largo
+                  plazo.
+                </p>
+              </div>
+              <!-- Step 2 -->
+              <div
+                class="flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <div
+                  class="w-24 h-24 rounded-full bg-surface-container-high border border-primary/20 flex items-center justify-center mb-8 relative group"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-500"
+                  ></div>
+                  <span class="text-3xl font-black text-primary font-headline"
+                    >02</span
+                  >
+                </div>
+                <h4
+                  class="text-xl font-bold text-on-surface mb-3 font-headline"
+                >
+                  Plan Maestro
+                </h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">
+                  Diseño de la infraestructura técnica y las rutas de UX antes
+                  de escribir una sola línea de código.
+                </p>
+              </div>
+              <!-- Step 3 -->
+              <div
+                class="flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <div
+                  class="w-24 h-24 rounded-full bg-surface-container-high border border-primary/20 flex items-center justify-center mb-8 relative group"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-500"
+                  ></div>
+                  <span class="text-3xl font-black text-primary font-headline"
+                    >03</span
+                  >
+                </div>
+                <h4
+                  class="text-xl font-bold text-on-surface mb-3 font-headline"
+                >
+                  Ensamblaje
+                </h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">
+                  Ciclos de desarrollo ágiles con integración continua y bucles
+                  de retroalimentación del cliente en tiempo real.
+                </p>
+              </div>
+              <!-- Step 4 -->
+              <div
+                class="flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <div
+                  class="w-24 h-24 rounded-full bg-surface-container-high border border-primary/20 flex items-center justify-center mb-8 relative group"
+                >
+                  <div
+                    class="absolute inset-0 rounded-full bg-primary/10 scale-0 group-hover:scale-110 transition-transform duration-500"
+                  ></div>
+                  <span class="text-3xl font-black text-primary font-headline"
+                    >04</span
+                  >
+                </div>
+                <h4
+                  class="text-xl font-bold text-on-surface mb-3 font-headline"
+                >
+                  Validación
+                </h4>
+                <p class="text-sm text-on-surface-variant leading-relaxed">
+                  Control de calidad riguroso, pruebas de carga y auditoría de
+                  seguridad para garantizar que el sistema esté listo para la
+                  producción.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section (Updated to match Homepage style) -->
+      <section class="px-6 md:px-12 py-20 bg-surface">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="panel-border p-8 md:p-16 flex flex-col justify-center items-center text-center space-y-8"
+          >
+            <div class="max-w-2xl">
+              <h2
+                class="font-headline text-3xl md:text-5xl font-black uppercase mb-4 tracking-tighter text-on-surface"
+              >
+                ¿Listo para construir tu
+                <span class="text-primary">próximo hito?_</span>
+              </h2>
+              <p
+                class="text-sm md:text-base text-on-surface-variant font-mono mb-10 tracking-tight"
+              >
+                Ejecute la fase de descubrimiento de arquitectura para escalar
+                sus operaciones empresariales. Solicite una propuesta
+                personalizada adaptada a sus necesidades de ingeniería
+                específicas.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                  class="bg-primary text-[#001f26] px-10 py-4 font-bold uppercase tracking-tighter hover:scale-105 transition-transform font-headline"
+                >
+                  Iniciar_Instancia
+                </button>
+                <button
+                  class="border border-outline-variant/50 text-on-surface px-10 py-4 font-bold uppercase tracking-tighter hover:bg-white/5 transition-colors font-headline"
+                >
+                  Repo_Documentos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+{% endblock %}

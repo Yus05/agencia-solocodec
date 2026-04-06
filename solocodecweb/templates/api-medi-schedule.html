@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+
+{% block title %}Api Medicos{% endblock %}
+
+{% block content %}
+    <main class="pt-24 overflow-hidden">
+      <!-- Section 1: Hero -->
+      <section class="relative px-8 py-20 md:py-32 max-w-[1440px] mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div class="lg:col-span-6 z-10">
+            <div
+              class="inline-flex items-center px-3 py-1 rounded-md bg-surface-container-highest text-primary text-[10px] font-bold tracking-[0.2em] uppercase mb-6"
+            >
+              Caso de Estudio: Infraestructura
+            </div>
+            <h1
+              class="text-6xl md:text-8xl font-bold headline tracking-tight mb-8 leading-[1.1] text-on-surface"
+            >
+              MediSchedule
+            </h1>
+            <p
+              class="text-xl md:text-2xl text-secondary max-w-xl leading-relaxed mb-12"
+            >
+              Infraestructura de citas diseñada con precisión para operaciones
+              clínicas a gran escala.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2"
+              >
+                Ver Documentación
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-6 relative">
+            <div
+              class="absolute -inset-20 bg-primary/10 blur-[120px] rounded-full"
+            ></div>
+            <div
+              class="relative rounded-xl overflow-hidden border border-outline-variant/15 bg-surface-container-high p-4"
+            >
+              <img
+                alt="Panel de control de API médica con indicadores de salud en color cian"
+                class="rounded-lg shadow-2xl w-full h-auto object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLje8Yuzy_dsKB0ojfVL9uz7pFEZVyDnT_ku042hkMeSe6nhZS6b_vgn2NHSJMWsrm01AmXain-XhdSWUVq7QO8hLgiklNE-OerGegH5VFOGp5-S-bp7iGjPZfsXFx4SLbDhzIipRZsq4SGWtrgcroxnjg-T9XZ9hTPIsM_fK5qPpnuIH_1kCj6Kf4NKgmGOoeA3v7l2k1qx-lqSa0GoRdT3iFBBL6rs6_M0iFr5qRLqf03PgHzoh3snyEhFjJaOXORx9ldDcD0I"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 2: Problem & Solution -->
+      <section class="bg-surface-container-low px-8 py-28 md:py-40">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-start">
+            <div>
+              <h2
+                class="text-4xl md:text-5xl font-bold headline tracking-tight mb-8 text-on-surface leading-tight"
+              >
+                El desafío de la programación en la
+                <span class="text-primary">salud moderna</span>
+              </h2>
+            </div>
+            <div class="space-y-8">
+              <p class="text-lg text-secondary leading-relaxed font-light">
+                Los sistemas de programación tradicionales colapsan bajo el peso
+                de los requisitos de datos de salud modernos. Las plataformas
+                heredadas luchan con el cumplimiento de HIPAA a escala, lo que
+                resulta en datos de pacientes fragmentados y un aumento de la
+                carga administrativa.
+              </p>
+              <p class="text-lg text-secondary leading-relaxed font-light">
+                El enfoque del
+                <span class="text-on-surface font-semibold italic"
+                  >Arquitecto Digital</span
+                >
+                trata la programación no como una utilidad, sino como un nodo
+                crítico en el ecosistema del paciente. MediSchedule ofrece una
+                API modular, segura e hiperscalable que se integra directamente
+                en sus flujos de trabajo clínicos existentes sin fricciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3: Core Features (Bento Grid) -->
+      <section class="px-8 py-28 md:py-40 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+          <h2 class="text-3xl md:text-4xl font-bold headline mb-4">
+            Cimientos Arquitectónicos
+          </h2>
+          <div class="h-1 w-20 bg-primary mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+          <!-- Large Feature -->
+          <div
+            class="md:col-span-8 bg-surface-container-high rounded-xl p-10 flex flex-col justify-between group hover:bg-surface-variant transition-colors duration-500"
+          >
+            <div>
+              <span
+                class="material-symbols-outlined text-4xl text-primary mb-6"
+                data-icon="sync"
+                >sync</span
+              >
+              <h3 class="text-2xl font-bold headline mb-4">
+                Sincronización del ciclo de vida del paciente
+              </h3>
+              <p class="text-secondary max-w-md">
+                Orqueste el recorrido del paciente desde la admisión inicial
+                hasta el seguimiento postoperatorio con sincronización
+                bidireccional automatizada de datos en todos los sistemas EHR.
+              </p>
+            </div>
+            <div
+              class="mt-8 rounded-lg overflow-hidden border border-outline-variant/10"
+            >
+              <img
+                alt="Visualización 3D abstracta de flujo de datos entre nodos"
+                class="w-full h-40 object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzXqlgcX5Pf3hcf17WBCJVCLgi0XTeqxkIz37F6TJF9-Ds0C7LQzLsQsYShrazqbd3gBAFBT8W-J9LU-GuaSHqpyJ4lObkUpoNOr2UEeTdYXFk42PJ9NbYtIlwfqrrVvj8zTDV-ipUv-_Fmi1AJ2Q-52hcGG-tOM7KTmOm5vlSrVQWosl3p-_WHkwBjxy9nrQ1ATJlzrQo0AO5ZC-pM5xPEPnvmWMPOqbwQjEQLtk9OlQxBx1IwjM8M2BSeRxpwU8vRz5vz20ro7I"
+              />
+            </div>
+          </div>
+          <!-- Vertical Small Feature -->
+          <div
+            class="md:col-span-4 bg-surface-container-highest rounded-xl p-10 flex flex-col items-center text-center justify-center border border-outline-variant/5"
+          >
+            <span
+              class="material-symbols-outlined text-5xl text-primary mb-6"
+              data-icon="notifications_active"
+              >notifications_active</span
+            >
+            <h3 class="text-2xl font-bold headline mb-4">
+              Recordatorios Automatizados
+            </h3>
+            <p class="text-secondary">
+              Reduzca las tasas de inasistencia en un 40% con protocolos de
+              notificación inteligentes y multicanal.
+            </p>
+          </div>
+          <!-- Bottom Full Width Small -->
+          <div
+            class="md:col-span-12 bg-surface-container-high rounded-xl p-10 flex items-center gap-10 hover:bg-surface-variant transition-colors duration-500"
+          >
+            <div class="bg-primary/10 p-4 rounded-full">
+              <span
+                class="material-symbols-outlined text-primary text-3xl"
+                data-icon="terminal"
+                >terminal</span
+              >
+            </div>
+            <div class="flex-1">
+              <h3 class="text-2xl font-bold headline mb-1">
+                Integración de API Segura
+              </h3>
+              <p class="text-secondary">
+                Interfaces GraphQL y REST de nivel empresarial con OAuth2.0 y
+                registro de auditoría detallado.
+              </p>
+            </div>
+            <div class="hidden md:block">
+              <span
+                class="material-symbols-outlined text-outline/40"
+                data-icon="north_east"
+                >north_east</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 4: The Tech Stack -->
+      <section class="bg-surface-container-low px-8 py-28 md:py-40">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20"
+        >
+          <div class="flex-1">
+            <h2 class="text-3xl md:text-4xl font-bold headline mb-6">
+              Diseñado para la Confiabilidad
+            </h2>
+            <p class="text-secondary mb-10 text-lg">
+              Nuestro stack tecnológico ha sido seleccionado para ofrecer la
+              máxima durabilidad y seguridad en entornos clínicos.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-5 py-2 rounded-md bg-surface-container-highest text-secondary text-sm font-semibold border border-outline-variant/10"
+                >Python 3.11</span
+              >
+              <span
+                class="px-5 py-2 rounded-md bg-surface-container-highest text-secondary text-sm font-semibold border border-outline-variant/10"
+                >Flask</span
+              >
+              <span
+                class="px-5 py-2 rounded-md bg-surface-container-highest text-secondary text-sm font-semibold border border-outline-variant/10"
+                >PostgreSQL</span
+              >
+              <span
+                class="px-5 py-2 rounded-md bg-surface-container-highest text-secondary text-sm font-semibold border border-outline-variant/10"
+                >AWS Lambda</span
+              >
+              <span
+                class="px-5 py-2 rounded-md bg-surface-container-highest text-secondary text-sm font-semibold border border-outline-variant/10"
+                >Redis</span
+              >
+              <span
+                class="px-5 py-2 rounded-md bg-surface-container-highest text-secondary text-sm font-semibold border border-outline-variant/10"
+                >Terraform</span
+              >
+            </div>
+          </div>
+          <div class="flex-1 grid grid-cols-2 gap-4">
+            <div
+              class="h-40 bg-surface-container-high rounded-xl p-8 flex flex-col justify-end border border-outline-variant/10"
+            >
+              <div class="text-primary text-3xl font-bold mb-2">99.9%</div>
+              <div
+                class="text-secondary text-xs uppercase tracking-widest font-bold"
+              >
+                Tiempo de Actividad
+              </div>
+            </div>
+            <div
+              class="h-40 bg-primary/10 rounded-xl p-8 flex flex-col justify-end border border-primary/20"
+            >
+              <div class="text-primary text-3xl font-bold mb-2">1M+</div>
+              <div
+                class="text-secondary text-xs uppercase tracking-widest font-bold"
+              >
+                Citas
+              </div>
+            </div>
+            <div
+              class="h-40 bg-surface-container-high rounded-xl p-8 flex flex-col justify-end border border-outline-variant/10"
+            >
+              <div class="text-primary text-3xl font-bold mb-2">&lt;100ms</div>
+              <div
+                class="text-secondary text-xs uppercase tracking-widest font-bold"
+              >
+                Latencia
+              </div>
+            </div>
+            <div
+              class="h-40 bg-surface-container-high rounded-xl p-8 flex flex-col justify-end border border-outline-variant/10"
+            >
+              <div class="text-primary text-3xl font-bold mb-2">256-bit</div>
+              <div
+                class="text-secondary text-xs uppercase tracking-widest font-bold"
+              >
+                Encriptación
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 6: Final CTA -->
+      <section class="px-8 py-32 md:py-48 text-center relative overflow-hidden">
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-surface to-surface-container-low opacity-50"
+        ></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+          <h2
+            class="text-5xl md:text-7xl font-bold headline tracking-tighter mb-8 leading-none"
+          >
+            ¿Listo para construir tu
+            <span class="text-primary italic">próximo hito?</span>
+          </h2>
+          <p
+            class="text-xl text-secondary mb-12 max-w-2xl mx-auto leading-relaxed"
+          >
+            Diseñemos juntos una solución de salud que escale con su ambición.
+            Despliegue la infraestructura de precisión de MediSchedule hoy
+            mismo.
+          </p>
+          <div class="flex flex-col md:flex-row justify-center gap-6">
+            <button
+              class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-xl shadow-primary/20"
+            >
+              Inicia Tu Proyecto
+            </button>
+            <button
+              class="px-10 py-5 rounded-full font-bold text-xl text-primary border border-primary/30 hover:bg-primary/5 transition-colors"
+            >
+              Reserva Llamada Estratégica
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+{% endblock %}

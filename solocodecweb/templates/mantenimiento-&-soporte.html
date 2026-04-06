@@ -1,0 +1,413 @@
+{% extends 'base.html' %}
+
+{% block title %}Mantenimiento & Soporte{% endblock %}
+
+{% block content %}
+    <main class="max-w-[1440px] mx-auto px-8 md:px-16 overflow-hidden">
+        <!-- Hero Section -->
+        <section
+            class="relative min-h-[85vh] flex items-center pt-12 pb-24 overflow-visible"
+        >
+            <!-- Background Visuals -->
+            <div class="absolute inset-0 hero-glow -z-10 pointer-events-none"></div>
+            <div
+            class="absolute right-[-10%] top-[10%] w-[60%] aspect-square -z-20 opacity-40 blur-3xl rounded-full bg-primary/20"
+            ></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+            <div class="flex flex-col items-start gap-8 z-10">
+                <div
+                class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-surface-container-high ghost-border"
+                >
+                <span
+                    class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                ></span>
+                <span
+                    class="text-[0.75rem] font-bold uppercase tracking-widest text-primary"
+                    >Operación Continua</span
+                >
+                </div>
+                <h1
+                class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface leading-[1]"
+                >
+                Mantenimiento, Soporte y <br />
+                <span class="text-transparent bg-clip-text primary-gradient"
+                    >Mejora Continua</span
+                >
+                </h1>
+                <p
+                class="text-xl md:text-2xl text-on-surface-variant font-light max-w-xl leading-relaxed"
+                >
+                Asegurando que su ecosistema digital permanezca resiliente, seguro
+                y a la vanguardia.
+                </p>
+                <div class="flex gap-4 mt-4">
+                <button
+                    class="primary-gradient text-on-primary font-bold px-10 py-5 rounded-full text-lg hover:shadow-[0_0_30px_rgba(76,215,246,0.3)] transition-all"
+                >
+                    Ver Planes
+                </button>
+                <div class="flex -space-x-3 items-center ml-4">
+                    <div
+                    class="w-10 h-10 rounded-full border-2 border-background bg-surface-container-highest flex items-center justify-center text-xs font-bold text-primary"
+                    >
+                    24/7
+                    </div>
+                    <div
+                    class="text-sm font-medium text-on-surface-variant ml-4 px-4"
+                    >
+                    Con la confianza de más de 200 socios corporativos
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- 3D Visualization Placeholder/Graphic -->
+            <div class="relative group perspective-[1000px] hidden lg:block">
+                <div class="animate-float relative">
+                <!-- Main Visualization Card -->
+                <div
+                    class="relative aspect-square w-full max-w-[600px] mx-auto rounded-3xl overflow-hidden ghost-border bg-surface-container-low shadow-2xl backdrop-blur-sm"
+                >
+                    <img
+                    alt="Infraestructura Técnica"
+                    class="w-full h-full object-cover opacity-80"
+                    data-alt="Photorealistic 3D visualization of a glowing global network with nodes and data streams, representing resilience and connectivity in dark navy and cyan tones."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGLiCfjVxxjfIU0jquzHcqpC8t7ugqAC-1fE-z1Vq9YwBJ2CXgzEQ4aAzQvZdL5q0MwFD8Jzc7yGZms9BwNHweEU8qmmgQp3f_1n4vY7vLAxRTZUKpEXol6fUGGHCSB17ZGinDY3E-os_ZoSy7m71p0G66nhRmSJtHBBYIORl6N3YUtQ6UmaOZ7WNZ-nYi-6sl4cWrhJXDUik7W2gSXR9N_fdh1R2MfNdV3r5Ikoc2pKwFhLu3UjSWu90sIG9P8I8swwV16QhQP44"
+                    />
+                    <div
+                    class="absolute inset-0 bg-gradient-to-tr from-background/80 via-transparent to-primary/10"
+                    ></div>
+                    <!-- Floating Data UI Elements -->
+                    <div
+                    class="absolute top-8 left-8 p-4 bg-surface-container-highest/80 backdrop-blur-md rounded-xl ghost-border animate-pulse delay-700"
+                    >
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary"
+                        >speed</span
+                        >
+                        <div>
+                        <div
+                            class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold"
+                        >
+                            Latencia
+                        </div>
+                        <div class="text-lg font-bold text-on-surface">12ms</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div
+                    class="absolute bottom-8 right-8 p-4 bg-surface-container-highest/80 backdrop-blur-md rounded-xl ghost-border animate-pulse"
+                    >
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-green-400"
+                        >check_circle</span
+                        >
+                        <div>
+                        <div
+                            class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold"
+                        >
+                            Uptime
+                        </div>
+                        <div class="text-lg font-bold text-on-surface">
+                            99.99%
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Decorative Orbitals -->
+                <div
+                    class="absolute -inset-10 border border-primary/10 rounded-full animate-[spin_20s_linear_infinite]"
+                ></div>
+                <div
+                    class="absolute -inset-20 border border-primary/5 rounded-full animate-[spin_30s_linear_infinite_reverse]"
+                ></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Service Pillars Bento Grid -->
+        <section class="py-20">
+            <div
+            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+            >
+            <div class="max-w-xl">
+                <h2 class="text-3xl md:text-4xl font-headline font-semibold mb-4">
+                Marco de Resiliencia Central
+                </h2>
+                <p class="text-on-surface-variant">
+                No solo corregimos errores; integramos durabilidad en cada capa de
+                su arquitectura de aplicaciones.
+                </p>
+            </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+            <!-- Pillar 1: 24/7 Monitoring -->
+            <div
+                class="md:col-span-8 bg-surface-container-high rounded-xl p-10 flex flex-col justify-between group overflow-hidden relative"
+            >
+                <div class="z-10">
+                <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                    >monitoring</span
+                >
+                <h3 class="text-2xl font-headline font-bold mb-4">
+                    Monitoreo Proactivo 24/7
+                </h3>
+                <p class="text-on-surface-variant text-lg max-w-md">
+                    Controles de salud y tiempo de actividad en tiempo real que
+                    detectan anomalías antes de que afecten a sus usuarios finales.
+                </p>
+                </div>
+                <div
+                class="absolute bottom-[-20%] right-[-10%] opacity-10 group-hover:opacity-20 transition-opacity"
+                >
+                <span class="material-symbols-outlined text-[300px] text-primary"
+                    >analytics</span
+                >
+                </div>
+            </div>
+            <!-- Pillar 2: Security -->
+            <div
+                class="md:col-span-4 bg-surface-container-low rounded-xl p-10 flex flex-col items-start gap-8 ghost-border"
+            >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                >security</span
+                >
+                <div>
+                <h3 class="text-xl font-headline font-bold mb-2">
+                    Seguridad y Cumplimiento
+                </h3>
+                <p class="text-on-surface-variant">
+                    Auditorías regulares y parches automatizados para proteger sus
+                    activos de las amenazas en evolución.
+                </p>
+                </div>
+                <div class="mt-auto flex flex-wrap gap-2">
+                <span
+                    class="px-3 py-1 rounded-md bg-surface-container-highest text-[0.7rem] font-semibold text-primary uppercase"
+                    >SOC2 Ready</span
+                >
+                <span
+                    class="px-3 py-1 rounded-md bg-surface-container-highest text-[0.7rem] font-semibold text-primary uppercase"
+                    >HIPAA Aware</span
+                >
+                </div>
+            </div>
+            <!-- Pillar 3: Performance -->
+            <div
+                class="md:col-span-4 bg-surface-container-low rounded-xl p-10 flex flex-col items-start gap-8 ghost-border"
+            >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                >speed</span
+                >
+                <div>
+                <h3 class="text-xl font-headline font-bold mb-2">
+                    Optimización de Rendimiento
+                </h3>
+                <p class="text-on-surface-variant">
+                    Optimización continua de la velocidad y la eficiencia de la base
+                    de datos para mantener su UX libre de fricciones.
+                </p>
+                </div>
+            </div>
+            <!-- Pillar 4: Evolution -->
+            <div
+                class="md:col-span-8 bg-surface-container-high rounded-xl p-10 flex flex-col justify-between overflow-hidden relative"
+            >
+                <div class="z-10">
+                <span class="material-symbols-outlined text-primary text-4xl mb-6"
+                    >dynamic_feed</span
+                >
+                <h3 class="text-2xl font-headline font-bold mb-4">
+                    Evolución Adaptativa
+                </h3>
+                <p class="text-on-surface-variant text-lg max-w-md">
+                    Actualizaciones incrementales de funciones y gestión agresiva de
+                    deuda técnica para garantizar la escalabilidad a largo plazo.
+                </p>
+                </div>
+                <div class="flex items-center gap-4 z-10 mt-6">
+                <div class="w-16 h-1 bg-primary/20 rounded-full overflow-hidden">
+                    <div class="w-[75%] h-full bg-primary"></div>
+                </div>
+                <span class="text-sm font-label text-on-surface-variant"
+                    >Eficiencia de Refactorización: 75%</span
+                >
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- The Maintenance Roadmap -->
+        <section class="py-24 space-y-20">
+            <div class="text-center max-w-3xl mx-auto">
+            <h2
+                class="text-3xl md:text-5xl font-headline font-bold tracking-tight mb-6"
+            >
+                La Hoja de Ruta de Mantenimiento
+            </h2>
+            <p class="text-on-surface-variant text-lg">
+                Un enfoque sistemático para la protección del legado y la
+                preparación para el futuro.
+            </p>
+            </div>
+            <div class="relative">
+            <!-- Vertical Line (Desktop) -->
+            <div
+                class="hidden md:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant/30"
+            ></div>
+            <div class="space-y-24">
+                <!-- Step 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-12 md:gap-0">
+                <div class="md:w-1/2 md:pr-24 md:text-right">
+                    <span
+                    class="text-primary font-bold text-6xl opacity-20 block mb-4"
+                    >01</span
+                    >
+                    <h3 class="text-2xl font-headline font-bold mb-4">
+                    Auditoría de Salud
+                    </h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                    Realizamos una evaluación inicial de su stack completo,
+                    identificando cuellos de botella, vulnerabilidades de
+                    seguridad y dependencias obsoletas.
+                    </p>
+                </div>
+                <div class="relative flex items-center justify-center z-10">
+                    <div
+                    class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(76,215,246,0.4)]"
+                    >
+                    <span class="material-symbols-outlined text-on-primary"
+                        >search_check</span
+                    >
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-24"></div>
+                </div>
+                <!-- Step 2 -->
+                <div
+                class="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-0"
+                >
+                <div class="md:w-1/2 md:pl-24">
+                    <span
+                    class="text-primary font-bold text-6xl opacity-20 block mb-4"
+                    >02</span
+                    >
+                    <h3 class="text-2xl font-headline font-bold mb-4">
+                    Implementación
+                    </h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                    Integración de suites de monitoreo automatizado y escaneo de
+                    seguridad CI/CD. Establecemos la infraestructura para la
+                    resiliencia 24/7.
+                    </p>
+                </div>
+                <div class="relative flex items-center justify-center z-10">
+                    <div
+                    class="w-12 h-12 rounded-full bg-surface-container-highest border-2 border-primary flex items-center justify-center"
+                    >
+                    <span class="material-symbols-outlined text-primary"
+                        >settings_applications</span
+                    >
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pr-24"></div>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col md:flex-row items-center gap-12 md:gap-0">
+                <div class="md:w-1/2 md:pr-24 md:text-right">
+                    <span
+                    class="text-primary font-bold text-6xl opacity-20 block mb-4"
+                    >03</span
+                    >
+                    <h3 class="text-2xl font-headline font-bold mb-4">
+                    Optimización Continua
+                    </h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                    Mejoras iterativas basadas en telemetría de datos del mundo
+                    real. Refinamos rutas de código, actualizamos bibliotecas y
+                    eliminamos regresiones de rendimiento.
+                    </p>
+                </div>
+                <div class="relative flex items-center justify-center z-10">
+                    <div
+                    class="w-12 h-12 rounded-full bg-surface-container-highest border-2 border-primary flex items-center justify-center"
+                    >
+                    <span class="material-symbols-outlined text-primary"
+                        >trending_up</span
+                    >
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-24"></div>
+                </div>
+                <!-- Step 4 -->
+                <div
+                class="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-0"
+                >
+                <div class="md:w-1/2 md:pl-24">
+                    <span
+                    class="text-primary font-bold text-6xl opacity-20 block mb-4"
+                    >04</span
+                    >
+                    <h3 class="text-2xl font-headline font-bold mb-4">
+                    Crecimiento Estratégico
+                    </h3>
+                    <p class="text-on-surface-variant leading-relaxed">
+                    Reuniones de planificación a largo plazo para alinear las
+                    actualizaciones técnicas con su hoja de ruta comercial,
+                    asegurando que nunca encuentre una barrera tecnológica.
+                    </p>
+                </div>
+                <div class="relative flex items-center justify-center z-10">
+                    <div
+                    class="w-12 h-12 rounded-full bg-surface-container-highest border-2 border-primary flex items-center justify-center"
+                    >
+                    <span class="material-symbols-outlined text-primary"
+                        >rocket_launch</span
+                    >
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pr-24"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-32">
+            <div
+            class="relative rounded-3xl overflow-hidden bg-surface-container-low p-12 md:p-24 flex flex-col items-center text-center ghost-border"
+            >
+            <div
+                class="absolute inset-0 opacity-10 pointer-events-none"
+                style="
+                background-image: radial-gradient(
+                    circle at 2px 2px,
+                    #4cd7f6 1px,
+                    transparent 0
+                );
+                background-size: 40px 40px;
+                "
+            ></div>
+            <h2
+                class="text-4xl md:text-6xl font-headline font-bold mb-8 z-10 tracking-tighter"
+            >
+                Mantenga su ventaja competitiva.
+            </h2>
+            <p class="text-xl text-on-surface-variant max-w-2xl mb-12 z-10">
+                Su software es un activo, no un costo. Analicemos un plan de
+                mantenimiento que proteja su inversión e impulse un valor continuo.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 z-10">
+                <button
+                class="primary-gradient text-on-primary font-bold px-10 py-5 rounded-full text-lg hover:shadow-[0_0_30px_rgba(76,215,246,0.3)] transition-all"
+                >
+                Solicitar Consulta
+                </button>
+                <button
+                class="px-10 py-5 rounded-full text-lg border border-outline-variant text-on-surface hover:bg-surface-container-highest transition-all"
+                >
+                Ver Niveles de Servicio
+                </button>
+            </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
