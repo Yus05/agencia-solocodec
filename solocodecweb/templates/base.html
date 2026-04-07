@@ -110,87 +110,63 @@
   <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
     <!-- TopNavBar -->
     <nav class="fixed top-0 w-full z-50 bg-[#0b1326]/80 backdrop-blur-xl flex justify-between items-center px-6 md:px-12 h-24">
-      <div class="text-2xl font-bold tracking-tighter text-[#dae2fd] font-headline">
-        <a href="/">
-          KINETIC_ARCH
-        </a>
-      </div>
-      <!-- enlaces del menu nav -->
-      <div class="hidden md:flex gap-10 items-center">
-        <!-- servicio con submenu -->
-        <div class="relative group">
-          <a href="{{ url_for('pages.servicios') }}"
-            class="font-headline transition-colors pb-1 flex items-center gap-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint and 'pages.servicio' in request.endpoint else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
-            Servicios
-            <span class="material-symbols-outlined text-sm">expand_more</span>
-          </a>
+  <div class="text-2xl font-bold tracking-tighter text-[#dae2fd] font-headline">
+    <a href="/">KINETIC_ARCH</a>
+  </div>
 
-          <div class="absolute left-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
-            <div class="bg-[#131b2e] border border-[#45464d]/20 rounded-xl shadow-2xl py-3 px-2 backdrop-blur-xl">
-              <a href="{{ url_for('pages.servicio_diseno') }}" 
-                class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
-                Diseño & Desarrollo Web
-              </a>
-              
-              <a href="{{ url_for('pages.servicio_desarrollo') }}" 
-                class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
-                Desarrollo Aplicaciones Web
-              </a>
-              
-              <a href="{{ url_for('pages.servicio_automatizaciones') }}" 
-                class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
-                Automatizaciones IA
-              </a>
-              
-              <a href="{{ url_for('pages.servicio_mantenimiento') }}" 
-                class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
-                Mantenimiento & Soporte
-              </a>
-          </div>
-        </div>
-      </div>
-      <div class="relative group">
-        <a href="{{ url_for('pages.proyectos') }}"
-          class="font-headline transition-colors pb-1 flex items-center gap-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint and 'pages.proyecto' in request.endpoint else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
-          Proyectos
-          <span class="material-symbols-outlined text-sm">expand_more</span>
-        </a>
-        <div class="absolute left-0 mt-2 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
-          <div class="bg-[#131b2e] border border-[#45464d]/20 rounded-xl shadow-2xl py-3 px-2 backdrop-blur-xl">
-            
-            <a href="{{ url_for('pages.proyecto_agencia') }}" 
-              class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
-              Agencia Diseño Web
-            </a>
-            
-            <a href="{{ url_for('pages.proyecto_subscripcion') }}" 
-              class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
-              Agencia Web por Suscripción
-            </a>
-            
-            <a href="{{ url_for('pages.proyecto_api') }}" 
-              class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
-              API Medi Schedule
-            </a>
-            
-            <a href="{{ url_for('pages.proyecto_crm') }}" 
-              class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">
-              CRM para Freelancers
-            </a>
-          </div>
-        </div>
-      </div>
-      <a href="{{ url_for('pages.contacto') }}"
-        class="font-headline transition-colors pb-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint == 'pages.contacto' else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
-          Contacto
+  <button id="mobile-menu-btn" class="md:hidden text-[#dae2fd] focus:outline-none order-3">
+    <span class="material-symbols-outlined text-3xl" id="menu-icon">menu</span>
+  </button>
+
+  <div id="nav-menu" class="hidden absolute top-24 left-0 w-full bg-[#0b1326] flex-col gap-6 items-center py-8 md:py-0 border-b border-[#45464d]/20 md:border-none md:static md:w-auto md:bg-transparent md:flex md:flex-row md:gap-10 z-50">
+    
+    <div class="relative group w-full md:w-auto text-center md:text-left">
+      <a href="{{ url_for('pages.servicios') }}"
+        class="font-headline transition-colors pb-1 inline-flex items-center gap-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint and 'pages.servicio' in request.endpoint else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
+        Servicios
+        <span class="material-symbols-outlined text-sm">expand_more</span>
       </a>
+      <div class="md:absolute left-0 mt-2 w-full md:w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+        <div class="bg-[#131b2e] border border-[#45464d]/20 rounded-xl shadow-2xl py-3 px-2 backdrop-blur-xl">
+          <a href="{{ url_for('pages.servicio_diseno') }}" class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">Diseño & Desarrollo Web</a>
+          <a href="{{ url_for('pages.servicio_desarrollo') }}" class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">Desarrollo Aplicaciones Web</a>
+          <a href="{{ url_for('pages.servicio_automatizaciones') }}" class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">Automatizaciones IA</a>
+          <a href="{{ url_for('pages.servicio_mantenimiento') }}" class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">Mantenimiento & Soporte</a>
+        </div>
       </div>
-      <button
-        class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary-fixed px-8 py-3 rounded-full font-bold tracking-tight hover:shadow-[0_0_20px_rgba(76,215,246,0.3)] transition-all duration-300 active:scale-95"
-      >
-        Cotizar
-      </button>
-    </nav>
+    </div>
+
+    <div class="relative group w-full md:w-auto text-center md:text-left">
+      <a href="{{ url_for('pages.proyectos') }}"
+        class="font-headline transition-colors pb-1 inline-flex items-center gap-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint and 'pages.proyecto' in request.endpoint else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
+        Proyectos
+        <span class="material-symbols-outlined text-sm">expand_more</span>
+      </a>
+      <div class="md:absolute left-0 mt-2 w-full md:w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[60]">
+        <div class="bg-[#131b2e] border border-[#45464d]/20 rounded-xl shadow-2xl py-3 px-2 backdrop-blur-xl">
+          <a href="{{ url_for('pages.proyecto_agencia') }}" class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">Agencia Diseño Web</a>
+          <a href="{{ url_for('pages.proyecto_subscripcion') }}" class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">Agencia Web por Suscripción</a>
+          <a href="{{ url_for('pages.proyecto_api') }}" class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">API Medi Schedule</a>
+          <a href="{{ url_for('pages.proyecto_crm') }}" class="block px-4 py-2 text-sm text-[#dae2fd]/70 hover:text-[#4cd7f6] hover:bg-[#4cd7f6]/10 rounded-lg transition-colors font-body">CRM para Freelancers</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="{{ url_for('pages.contacto') }}"
+      class="font-headline transition-colors pb-1 {{ 'text-[#4cd7f6] font-semibold border-b-2 border-[#4cd7f6]' if request.endpoint == 'pages.contacto' else 'text-[#dae2fd]/70 hover:text-[#dae2fd]' }}">
+        Contacto
+    </a>
+
+    <button class="md:hidden bg-gradient-to-br from-[#4cd7f6] to-[#2a94b0] text-[#0b1326] px-8 py-3 rounded-full font-bold active:scale-95">
+      Cotizar
+    </button>
+  </div>
+
+  <button class="hidden md:block bg-gradient-to-br from-[#4cd7f6] to-[#2a94b0] text-[#0b1326] px-8 py-3 rounded-full font-bold tracking-tight hover:shadow-[0_0_20px_rgba(76,215,246,0.3)] transition-all duration-300 active:scale-95">
+    Cotizar
+  </button>
+</nav>
+
 
 
     <!-- <main></main> -->
@@ -375,5 +351,20 @@
         ></span>
       </span>
     </a>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('nav-menu');
+        const icon = document.getElementById('menu-icon');
+
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('flex');
+          // Cambio opcional de icono de hamburguesa a X
+          icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+      });
+    </script>
   </body>
 </html>
