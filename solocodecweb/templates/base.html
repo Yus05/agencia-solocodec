@@ -364,44 +364,44 @@
       </span>
     </a>
 
-    <script>
-document.addEventListener('DOMContentLoaded', () => {
+      <script>
+  document.addEventListener('DOMContentLoaded', () => {
 
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('nav-menu');
-  const icon = document.getElementById('menu-icon');
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('nav-menu');
+    const icon = document.getElementById('menu-icon');
 
-  // Toggle menú principal
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('flex');
-    icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
-  });
-
-  // Submenús (mobile)
-  const toggles = document.querySelectorAll('.menu-toggle');
-
-  toggles.forEach(toggle => {
-    toggle.addEventListener('click', (e) => {
-
-      if (window.innerWidth < 768) {
-        e.preventDefault();
-
-        const parent = toggle.closest('.group');
-        const submenu = parent.querySelector('.submenu');
-
-        // cerrar otros submenús
-        document.querySelectorAll('.submenu').forEach(sm => {
-          if (sm !== submenu) sm.classList.add('hidden');
-        });
-
-        submenu.classList.toggle('hidden');
-      }
-
+    // Toggle menú principal
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
     });
-  });
 
-});
-</script>
+    // Submenús (mobile)
+    const toggles = document.querySelectorAll('.menu-toggle');
+
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', (e) => {
+
+        if (window.innerWidth < 768) {
+          e.preventDefault();
+
+          const parent = toggle.closest('.group');
+          const submenu = parent.querySelector('.submenu');
+
+          // cerrar otros submenús
+          document.querySelectorAll('.submenu').forEach(sm => {
+            if (sm !== submenu) sm.classList.add('hidden');
+          });
+
+          submenu.classList.toggle('hidden');
+        }
+
+      });
+    });
+
+  });
+  </script>
   </body>
 </html>
