@@ -10,5 +10,6 @@ load_dotenv()
 app = create_app()
 
 if __name__ == '__main__':
+    
     # Esto solo se ejecuta cuando tú escribes 'python run.py' en tu PC
     app.run(debug=True)

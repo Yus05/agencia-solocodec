@@ -1,4 +1,9 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request, flash, redirect, url_for, current_app
+from flask_mail import Mail, Message
+from flask_wtf.csrf import CSRFProtect
+
+from solocodecweb.forms import ContactForm
+from solocodecweb import mail
 
 bp = Blueprint('pages', __name__)
 
@@ -53,9 +58,47 @@ def proyecto_crm():
 # Fin Vistas Proyectos-------------------------------
 
 
-@bp.route('/contacto')
+# Vista Contacto-------------------------------------
+@bp.route('/contacto', methods=['GET', 'POST'])
 def contacto():
-    return render_template('contacto.html')
+    form = ContactForm()
+    
+    if form.validate_on_submit():
+        # 1. Extraer los datos del formulario ya validados
+        name = form.name.data
+        email = form.email.data
+        subject = form.subject.data
+        message_body = form.message.data
+        
+        #2. Crear el objeto del mensaje
+        msg = Message(subject=f"NUEVO MENSAJE SOLOCODEC: {subject}",
+                      sender=current_app.config['MAIL_USERNAME'],
+                      recipients=['ysomaza@gmail.com'])
+        
+        # 3. Cuerpo del correo
+        msg.body = f""" 
+        Has recibido un nuevo mensaje de contacto:
+        
+        Nombre: {name}
+        Correo de contacto: {email}
+        Asunto: {subject}
+        
+        Mensaje:
+        {message_body}
+        """
+        
+        # 4. Enviar el correo
+        try:
+            mail.send(msg)
+            flash('¡Gracias por contactarnos! Tu mensaje ha sido enviado con éxito.', 'success')
+        except Exception as e:
+            flash(f'Ocurrió un error al enviar el mensaje: {str(e)}', 'danger')
+            
+        return redirect(url_for('pages.contacto'))
+    
+    
+    return render_template('contacto.html', form=form)
+# Fin Vista Contacto
 
 
 # Vistas Legales---------------------

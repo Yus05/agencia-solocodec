@@ -1,5 +1,12 @@
 import os
 from flask import Flask
+from flask_mail import Mail
+from flask_wtf.csrf import CSRFProtect
+
+
+mail = Mail()
+csrf = CSRFProtect()
+
 
 def create_app():
     app = Flask(__name__)
@@ -13,8 +20,17 @@ def create_app():
 
     app.config.from_mapping(
         SECRET_KEY=key,
-        # Aquí puedes añadir más configuraciones luego
+        
+        # Configuracion de Flask-Mail (Gmail)
+        MAIL_SERVER = 'smtp.gmail.com',
+        MAIL_PORT = 587,
+        MAIL_USE_TLS = True,
+        MAIL_USERNAME = 'ysomaza@gmail.com',
+        MAIL_PASSWORD = 'awvyqycmltsxtihx'
     )
+    
+    mail.init_app(app)
+    csrf.init_app(app)
     
     # Registro de Blueprints
     from . import pages
