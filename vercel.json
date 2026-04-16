@@ -1,7 +1,8 @@
 {
   "functions": {
     "run.py": {
-      "runtime": "@vercel/python"
+      "memory": 128,
+      "maxDuration": 10
     }
   },
   "rewrites": [
