@@ -21,12 +21,12 @@ def create_app():
     app.config.from_mapping(
         SECRET_KEY=key,
         
-        # Configuracion de Flask-Mail (Gmail)
-        MAIL_SERVER = 'smtp.gmail.com',
-        MAIL_PORT = 587,
-        MAIL_USE_TLS = True,
-        MAIL_USERNAME = 'ysomaza@gmail.com',
-        MAIL_PASSWORD = 'awvyqycmltsxtihx'
+        # Configuracion de Flask-Mail (Cargada desde variables de entorno)
+        MAIL_SERVER='smtp.gmail.com',
+        MAIL_PORT=587,
+        MAIL_USE_TLS=True,
+        MAIL_USERNAME=os.environ.get('MAIL_USERNAME'),
+        MAIL_PASSWORD=os.environ.get('MAIL_PASSWORD')
     )
     
     mail.init_app(app)
