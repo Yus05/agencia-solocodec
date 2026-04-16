@@ -1,13 +1,8 @@
 {
-  "functions": {
-    "run.py": {
-      "maxDuration": 10
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "run.py"
+      "destination": "app.py"
     }
   ]
 }
