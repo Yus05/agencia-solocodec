@@ -55,38 +55,33 @@ content %}
         <form class="space-y-8 relative z-10" method="POST" action="">
           {{ form.hidden_tag() }}
 
-          <!-- div de Nombre y Correo-->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-            <!-- name -->
             <div>
               {{ form.name.label (class="label-md text-on-surface-variant") }}
-              <!-- <br /> -->
-              {{ form.name(class="w-full bg-transparent border-0 border-b
+              {{ form.name( class="w-full bg-transparent border-0 border-b
               border-outline-variant/30 focus:ring-0 focus:border-primary
               transition-all duration-300 py-3 px-0
               placeholder:text-on-surface-variant/40") }} {% for error in
               form.name.errors %}
-              <span style="color: red">[{{ error }}]</span>
+              <span class="text-red-500 text-xs">[{{ error }}]</span>
               {% endfor %}
             </div>
 
             <div>
               {{ form.email.label (class="label-md text-on-surface-variant")}}
-              <!-- <br /> -->
-              {{ form.email(class="w-full bg-transparent border-0 border-b
+              {{ form.email( class="w-full bg-transparent border-0 border-b
               border-outline-variant/30 focus:ring-0 focus:border-primary
               transition-all duration-300 py-3 px-0
               placeholder:text-on-surface-variant/40") }} {% for error in
               form.email.errors %}
-              <span style="color: red">[{{ error }}]</span>
+              <span class="text-red-500 text-xs">[{{ error }}]</span>
               {% endfor %}
             </div>
           </div>
 
           <div>
             {{ form.subject.label (class="label-md text-on-surface-variant") }}
-            <!-- <br /> -->
-            {{ form.subject(class="bg-transparent w-full border-0 border-b
+            {{ form.subject( class="bg-transparent w-full border-0 border-b
             border-outline-variant/30 focus:ring-0 focus:border-primary
             transition-all duration-300 py-3 px-0
             placeholder:text-on-surface-variant/40") }}
@@ -94,13 +89,13 @@ content %}
 
           <div>
             {{ form.message.label (class="label-md text-on-surface-variant")}}
-            <!-- <br /> -->
-            {{ form.message(rows="5", class="bg-transparent w-full border-0
+            {{ form.message( rows="5", class="bg-transparent w-full border-0
             border-b border-outline-variant/30 focus:ring-0 focus:border-primary
             transition-all duration-300 py-3 px-0
-            placeholder:text-on-surface-variant/40 resize-none") }} {% for error
+            placeholder:text-on-surface-variant/40 resize-none",
+            placeholder="Cuéntanos más sobre tu proyecto..." ) }} {% for error
             in form.message.errors %}
-            <span style="color: red">[{{ error }}]</span>
+            <span class="text-red-500 text-xs">[{{ error }}]</span>
             {% endfor %}
           </div>
 
@@ -108,7 +103,7 @@ content %}
             {{ form.submit(class="w-full bg-gradient-to-br from-primary
             to-on-primary-container text-on-primary-fixed py-4 rounded-full
             font-bold text-lg hover:shadow-[0_0_30px_rgba(76,215,246,0.4)]
-            transition-all duration-300 transform activate:scale-[0.98]
+            transition-all duration-300 transform active:scale-[0.98]
             cursor-pointer") }}
           </div>
         </form>
