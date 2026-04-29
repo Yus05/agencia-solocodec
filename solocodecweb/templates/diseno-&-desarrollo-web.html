@@ -1,443 +1,430 @@
-{% extends 'base.html' %}
-
-{% block title %}Diseño y Desarrollo Web{% endblock %}
-
+{% extends 'base.html' %} {% block title %}Diseño y Desarrollo Web{% endblock %}
 {% block content %}
-    <main class="pt-24">
-      <!-- Hero Section -->
-      <section
-        class="relative min-h-[819px] flex items-center px-8 overflow-hidden"
+<main class="pt-24">
+  <!-- Hero Section -->
+  <section
+    class="relative min-h-[819px] flex items-center px-8 overflow-hidden"
+  >
+    <div
+      class="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+    >
+      <div class="z-10">
+        <span
+          class="label-md text-primary font-bold tracking-[0.2em] uppercase mb-6 block"
+          >Impulsando tu negocio online</span
+        >
+        <h1
+          class="text-[3.5rem] md:text-[5rem] leading-[1.05] font-headline font-bold text-on-surface tracking-tighter mb-8"
+        >
+          Diseño & Desarrollo Web:
+          <span class="text-primary"
+            >Diseñamos Sitios Webs que te Hacen a Vender</span
+          >
+        </h1>
+        <p
+          class="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10"
+        >
+          Logra una presencia digital que convierta visitas en ingresos. Nuestro
+          <span class="font-black">Diseño & Desarrollo Web</span> combina
+          estrategia y tecnología de alto rendimiento para que tu sitio sea una
+          herramienta robusta, optimizada y lista para hacerte vender desde el
+          primer día.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <button
+            class="px-8 py-4 rounded-full bg-gradient-to-br from-primary to-on-primary-container text-on-primary font-bold hover:scale-105 transition-transform duration-300"
+          >
+            Iniciar mi Proyecto
+          </button>
+          <button
+            class="px-8 py-4 rounded-full ghost-border bg-surface-container-low text-primary font-bold hover:bg-surface-container-high transition-colors"
+          >
+            Ver Casos de Éxito
+          </button>
+        </div>
+      </div>
+      <div class="relative hidden lg:block">
+        <div
+          class="absolute -inset-10 bg-primary/10 blur-[120px] rounded-full"
+        ></div>
+        <div
+          class="relative rounded-xl overflow-hidden shadow-2xl transform hover:rotate-0 transition-transform duration-700 border border-white/10"
+        >
+          <img
+            alt="Estación de trabajo profesional de doble monitor en un estudio arquitectónico moderno"
+            class="w-full h-auto object-cover"
+            data-alt="A highly realistic, professional, and cinematic close-up of a high-end dual-monitor workstation in a dimly lit, modern architectural studio. One screen shows a complex UI design and the other shows clean code."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHL7Vu9QTpUWKam1gge3-ioZ6wvrEzYee1oRwLCohwgQ__2D1zzVyFIxhmU2eTleA8U9DSkk689KJ_hE6h-ofVisHLsq1FpYC-cJ_reR4idAN8p-88Ay3eAYccrROigEx-0wThMRroA4X7QcqsGBaB8FXc5azXeLgCZ7aZNPwJSb2kdF6mWC8D--lLbttD0P8UHvSU4owex-P_ZcMvFFLVfvb-hyE-w07v7khx3-7-dhq3KeVmL7xj68kx7Q9Qm8oJO6IGtzmrz4U"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- The Process (Bento Style) -->
+  <section class="py-32 px-8 bg-surface-container-low">
+    <div class="max-w-[1440px] mx-auto">
+      <div class="mb-20 text-center">
+        <h2
+          class="text-3xl md:text-5xl font-headline font-bold mb-6 text-on-surface"
+        >
+          El Camino Hacia una Web Exitosa
+        </h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">
+          El paso a paso de nuestro servicio de
+          <span class="font-black">diseño & desarrollo web</span> con el que
+          transformamos tu visión en una plataforma lista para recibir clientes
+          y generar ganancias.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Step 1 -->
+        <div
+          class="bg-surface p-10 rounded-xl ghost-border md:col-span-2 group hover:bg-surface-container-high transition-colors"
+        >
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-8"
+          >
+            <span class="material-symbols-outlined" data-icon="search"
+              >search</span
+            >
+          </div>
+          <span
+            class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block"
+            >Fase 01</span
+          >
+          <h3 class="text-2xl font-headline font-bold mb-4 text-on-surface">
+            Descubrimiento
+          </h3>
+          <p class="text-on-surface-variant leading-relaxed">
+            Nos sentamos contigo para entender tus metas. Investigamos tu
+            mercado para que cada detalle de la web tenga un propósito: VENDER.
+          </p>
+        </div>
+        <!-- Step 2 -->
+        <div
+          class="bg-surface p-10 rounded-xl ghost-border md:col-span-2 group hover:bg-surface-container-high transition-colors"
+        >
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-8"
+          >
+            <span class="material-symbols-outlined" data-icon="architecture"
+              >architecture</span
+            >
+          </div>
+          <span
+            class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block"
+            >Fase 02</span
+          >
+          <h3 class="text-2xl font-headline font-bold mb-4 text-on-surface">
+            Diseño Estratégico (Visual)
+          </h3>
+          <p class="text-on-surface-variant leading-relaxed">
+            Creamos una interfaz moderna e intuitiva. Nos aseguramos de que
+            navegar por tu sitio sea una experiencia fluida y profesional.
+          </p>
+        </div>
+        <!-- Step 3 -->
+        <div
+          class="bg-surface p-10 rounded-xl ghost-border md:col-span-3 group hover:bg-surface-container-high transition-colors"
+        >
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-8"
+          >
+            <span class="material-symbols-outlined" data-icon="code">code</span>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div>
+              <span
+                class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block"
+                >Fase 03</span
+              >
+              <h3 class="text-2xl font-headline font-bold mb-4 text-on-surface">
+                Desarrollo y Potencia
+              </h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                Aquí es donde el código cobra vida. Usamos tecnologías de última
+                generación para que tu sitio sea rápido, seguro y escalable.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 content-center">
+              <span
+                class="px-3 py-1 rounded-md bg-surface-container-highest text-label text-[10px] uppercase font-bold text-primary"
+                >Código Limpio</span
+              >
+              <span
+                class="px-3 py-1 rounded-md bg-surface-container-highest text-label text-[10px] uppercase font-bold text-primary"
+                >Escalabilidad</span
+              >
+              <span
+                class="px-3 py-1 rounded-md bg-surface-container-highest text-label text-[10px] uppercase font-bold text-primary"
+                >Rendimiento</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div
+          class="bg-surface p-10 rounded-xl ghost-border group hover:bg-surface-container-high transition-colors"
+        >
+          <div
+            class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-8"
+          >
+            <span class="material-symbols-outlined" data-icon="rocket_launch"
+              >rocket_launch</span
+            >
+          </div>
+          <span
+            class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block"
+            >Fase 04</span
+          >
+          <h3 class="text-2xl font-headline font-bold mb-4 text-on-surface">
+            Lanzamiento y SEO
+          </h3>
+          <p class="text-on-surface-variant text-sm leading-relaxed">
+            Ponemos tu web en marcha y la optimizamos para buscadores. Tu
+            negocio no solo estará online, será fácil de encontrar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Core Expertise (Redesigned) -->
+  <section class="py-32 px-8 bg-surface">
+    <div class="max-w-[1440px] mx-auto">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-end gap-10 mb-24"
+      >
+        <div class="max-w-2xl">
+          <span
+            class="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4 block"
+            >Lo que nos hace diferentes</span
+          >
+          <h2
+            class="text-4xl md:text-6xl font-headline font-bold text-on-surface tracking-tight"
+          >
+            Aplicamos Tecnologías Diseñadas para el Crecimiento de tu Negocio
+          </h2>
+        </div>
+        <p class="text-xl text-on-surface-variant max-w-md lg:text-right">
+          Combinamos estrategia de ventas con un diseño web moderno y código de
+          alto rendimiento para crear soluciones que no solo se ven bien, sino
+          que funcionan como un motor para tu empresa.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Expertise 1: UI/UX -->
+        <div
+          class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
+        >
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img
+              alt="Espacio de trabajo de diseño UI/UX de alta fidelidad"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf1vErvuz0XUBEc7p6qA1cBoIQ8-Xf5XQGb9VkRep7EYYtMlj5LKZ3ygLb2bc81l-Fa33WNMHR-6ZNVE2IXO_dr2-r2orE59bhg2BdH9Jh6ng0s-oSzRiicH7Vx72n0KGIsB8UT34YGAiAa3CEIYm7pqMf74KJrIISnvcZnXzmhyGaid-96z0Tm12ulEjxY_5QLHRIKlfpChNNtbxdG4Zxhl2x76z77MABzJ8jtsbMQc_j-zPb16JDJziooaDIeYO4PRjjXTF7Obk"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-60"
+            ></div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <h4
+              class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary transition-colors"
+            >
+              Diseño que Convierte
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+              No solo es estética. Diseñamos estructuras pensadas para guiar al
+              usuario hacia el botón de compra o contacto.
+            </p>
+            <div class="mt-auto pt-4 border-t border-white/5">
+              <span
+                class="text-[10px] font-bold text-primary tracking-widest uppercase"
+                >Estrategia y Movimiento</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Expertise 2: Full-Stack -->
+        <div
+          class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
+        >
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img
+              alt="Estación de trabajo de desarrollo full-stack profesional con múltiples monitores"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8m2TeI8d21S012saB5isMSwQzeJ2DcSt8CnP86V827yFvJpHso1DRoT8rDT0Go5Tn_YeW6hicHY5ihmSVg2ygpip1tSP4YiNDATifcGP2F15LXZUEC6_12ZNLto5h_KufHca5E5QkHy2c9pagSKTlzm3iS2OmDSeyT1j8D-EpcyGoDRvyGHe1A8IiwzrtgWLRLWvKKvhI26r6Bd7yifvD5VUU4GwaaO7la5FdNwZEcH3XzFWh1dqxvZDsTOtD8UnTdUxT42od14A"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-60"
+            ></div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <h4
+              class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary transition-colors"
+            >
+              Desarrollo Full-Stack
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+              Manejamos tanto lo que se ve como lo que no se ve. Código limpio y
+              potente que garantiza que tu web nunca te falle.
+            </p>
+            <div class="mt-auto pt-4 border-t border-white/5">
+              <span
+                class="text-[10px] font-bold text-primary tracking-widest uppercase"
+                >Ingeniería y Escala</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Expertise 3: Design Systems -->
+        <div
+          class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
+        >
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img
+              alt="Arquitectura de componentes de sistemas de diseño"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSquNZieKbENYdj1W7WOGcGEPIytySSVgpWHDH1nPxMY3SHOAtFzy8aUjbyUZCzPzqEDviY5a7X9CdZjtKBsAlnxqvAgE0QT3xF0o5qh8gOeR55rINZGG7qbayJRv9oSjqQzDr77VaUXrET2zLYF8fbIciwa_wVS28dApiF5kBlIesHhoZRuZXd6VqU9_RQPWd51behbEvN0IwRvsVUreV3QX6-E5V09vh9nXNcNqWPRXQeDYpRzV9lf7sCKzoeyxfVOpdYwTRq-g"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-60"
+            ></div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <h4
+              class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary transition-colors"
+            >
+              Gestión de Contenidos
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+              Te entregamos una herramienta que puedes controlar. Actualiza tus
+              servicios o productos de forma sencilla y sin complicaciones.
+            </p>
+            <div class="mt-auto pt-4 border-t border-white/5">
+              <span
+                class="text-[10px] font-bold text-primary tracking-widest uppercase"
+                >Eficiencia y Consistencia</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Expertise 4: Performance -->
+        <div
+          class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
+        >
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img
+              alt="Panel de optimización de rendimiento"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGcjI-97ihb3NoNGh-DUFvEhEa8YZEHpUgrIKigx0kuFh59g41B-lItqYpGRZqZiFeet7dWhW4CwVorEYOsWRoyF7lEy0x7fLjLZn5-YCXNNhnAQlISiSZJ9et9zvdE9zAbzYxbEhUdkV74ijQyskbTNzRRCAoLIpxr8RZw0Mhp7T4tXRHmig3_giXS2gIjwSameQ72loWoBTN6pZTyPWmEOvxc6E9FbXPBaWHhgUkoyGbAyNqb6Wmcd8uTXHldc6t6PoyWXcgsu8"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-60"
+            ></div>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <h4
+              class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary transition-colors"
+            >
+              Rendimiento y SEO
+            </h4>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+              Webs ultra-rápidas optimizadas para Google. Porque si tu página no
+              carga rápido o no aparece en búsquedas, no existe.
+            </p>
+            <div class="mt-auto pt-4 border-t border-white/5">
+              <span
+                class="text-[10px] font-bold text-primary tracking-widest uppercase"
+                >Optimización y SEO</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Toolkit Section -->
+  <section class="py-24 px-8 bg-surface-container-lowest overflow-hidden">
+    <div
+      class="max-w-[1440px] mx-auto border-y border-outline-variant/10 py-20"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+        <div class="md:col-span-2">
+          <h2 class="text-3xl font-headline font-bold text-on-surface mb-4">
+            Nuestro Stack Tecnológico
+          </h2>
+          <p class="text-on-surface-variant">
+            Utilizamos las herramientas más potentes del mercado para garantizar
+            resultados profesionales:
+          </p>
+        </div>
+        <div
+          class="md:col-span-3 flex flex-wrap justify-center md:justify-end gap-10 opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-3xl font-bold text-slate-100 font-headline"
+              >Python</span
+            >
+            <span class="w-1 h-1 rounded-full bg-primary"></span>
+          </div>
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-3xl font-bold text-slate-100 font-headline"
+              >Flask</span
+            >
+            <span class="w-1 h-1 rounded-full bg-primary"></span>
+          </div>
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-3xl font-bold text-slate-100 font-headline"
+              >MySQL</span
+            >
+            <span class="w-1 h-1 rounded-full bg-primary"></span>
+          </div>
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-3xl font-bold text-slate-100 font-headline"
+              >SEO</span
+            >
+            <span class="w-1 h-1 rounded-full bg-primary"></span>
+          </div>
+          <div class="flex flex-col items-center gap-3">
+            <span class="text-3xl font-bold text-slate-100 font-headline"
+              >Google Analytics</span
+            >
+            <span class="w-1 h-1 rounded-full bg-primary"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA Section -->
+  <section class="py-32 px-8">
+    <div class="max-w-[1440px] mx-auto">
+      <div
+        class="relative bg-gradient-to-br from-surface-container-high to-surface rounded-[2.5rem] p-12 md:p-24 overflow-hidden text-center ghost-border"
       >
         <div
-          class="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
-        >
-          <div class="z-10">
-            <span
-              class="label-md text-primary font-bold tracking-[0.2em] uppercase mb-6 block"
-              >Inmersión en el Servicio</span
-            >
-            <h1
-              class="text-[3.5rem] md:text-[5rem] leading-[1.05] font-headline font-bold text-on-surface tracking-tighter mb-8"
-            >
-              Diseño y Desarrollo: <br />
-              <span class="text-primary"
-                >Donde la Visión se Une con la Ingeniería</span
-              >
-            </h1>
-            <p
-              class="text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10"
-            >
-              Cerramos la brecha entre la excelencia estética y la precisión
-              técnica. En Kinetic, no solo construimos sitios web;
-              arquitecturamos ecosistemas digitales tan robustos como hermosos.
-            </p>
-            <div class="flex flex-wrap gap-4">
-              <button
-                class="px-8 py-4 rounded-full bg-gradient-to-br from-primary to-on-primary-container text-on-primary font-bold hover:scale-105 transition-transform duration-300"
-              >
-                Inicia tu Proyecto
-              </button>
-              <button
-                class="px-8 py-4 rounded-full ghost-border bg-surface-container-low text-primary font-bold hover:bg-surface-container-high transition-colors"
-              >
-                Ver Casos de Estudio
-              </button>
-            </div>
-          </div>
-          <div class="relative hidden lg:block">
-            <div
-              class="absolute -inset-10 bg-primary/10 blur-[120px] rounded-full"
-            ></div>
-            <div
-              class="relative rounded-xl overflow-hidden shadow-2xl transform hover:rotate-0 transition-transform duration-700 border border-white/10"
-            >
-              <img
-                alt="Estación de trabajo profesional de doble monitor en un estudio arquitectónico moderno"
-                class="w-full h-auto object-cover"
-                data-alt="A highly realistic, professional, and cinematic close-up of a high-end dual-monitor workstation in a dimly lit, modern architectural studio. One screen shows a complex UI design and the other shows clean code."
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHL7Vu9QTpUWKam1gge3-ioZ6wvrEzYee1oRwLCohwgQ__2D1zzVyFIxhmU2eTleA8U9DSkk689KJ_hE6h-ofVisHLsq1FpYC-cJ_reR4idAN8p-88Ay3eAYccrROigEx-0wThMRroA4X7QcqsGBaB8FXc5azXeLgCZ7aZNPwJSb2kdF6mWC8D--lLbttD0P8UHvSU4owex-P_ZcMvFFLVfvb-hyE-w07v7khx3-7-dhq3KeVmL7xj68kx7Q9Qm8oJO6IGtzmrz4U"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- The Process (Bento Style) -->
-      <section class="py-32 px-8 bg-surface-container-low">
-        <div class="max-w-[1440px] mx-auto">
-          <div class="mb-20 text-center">
-            <h2
-              class="text-3xl md:text-5xl font-headline font-bold mb-6 text-on-surface"
-            >
-              El Viaje del Arquitecto
-            </h2>
-            <p class="text-on-surface-variant max-w-2xl mx-auto">
-              Nuestro enfoque estructurado garantiza que cada píxel cumpla un
-              propósito y cada línea de código esté optimizada para el
-              rendimiento.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <!-- Step 1 -->
-            <div
-              class="bg-surface p-10 rounded-xl ghost-border md:col-span-2 group hover:bg-surface-container-high transition-colors"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-8"
-              >
-                <span class="material-symbols-outlined" data-icon="search"
-                  >search</span
-                >
-              </div>
-              <span
-                class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block"
-                >Fase 01</span
-              >
-              <h3 class="text-2xl font-headline font-bold mb-4 text-on-surface">
-                Descubrimiento
-              </h3>
-              <p class="text-on-surface-variant leading-relaxed">
-                Profundizamos en tus objetivos comerciales, necesidades del
-                usuario y limitaciones técnicas. Aquí es donde definimos el
-                plano para tu futuro digital.
-              </p>
-            </div>
-            <!-- Step 2 -->
-            <div
-              class="bg-surface p-10 rounded-xl ghost-border md:col-span-2 group hover:bg-surface-container-high transition-colors"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-8"
-              >
-                <span class="material-symbols-outlined" data-icon="architecture"
-                  >architecture</span
-                >
-              </div>
-              <span
-                class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block"
-                >Fase 02</span
-              >
-              <h3 class="text-2xl font-headline font-bold mb-4 text-on-surface">
-                Arquitectura Visual
-              </h3>
-              <p class="text-on-surface-variant leading-relaxed">
-                Traduciendo la estrategia en diseños de alta fidelidad y
-                prototipos interactivos. Construimos un lenguaje de diseño que
-                resuena con tu marca.
-              </p>
-            </div>
-            <!-- Step 3 -->
-            <div
-              class="bg-surface p-10 rounded-xl ghost-border md:col-span-3 group hover:bg-surface-container-high transition-colors"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-8"
-              >
-                <span class="material-symbols-outlined" data-icon="code"
-                  >code</span
-                >
-              </div>
-              <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                  <span
-                    class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block"
-                    >Fase 03</span
-                  >
-                  <h3
-                    class="text-2xl font-headline font-bold mb-4 text-on-surface"
-                  >
-                    Ingeniería
-                  </h3>
-                  <p class="text-on-surface-variant leading-relaxed">
-                    Nuestros desarrolladores convierten marcos estáticos en
-                    software vivo. Priorizamos el código limpio y escalable
-                    junto con experiencias de usuario fluidas en todos los
-                    dispositivos.
-                  </p>
-                </div>
-                <div class="flex flex-wrap gap-2 content-center">
-                  <span
-                    class="px-3 py-1 rounded-md bg-surface-container-highest text-label text-[10px] uppercase font-bold text-primary"
-                    >Código Limpio</span
-                  >
-                  <span
-                    class="px-3 py-1 rounded-md bg-surface-container-highest text-label text-[10px] uppercase font-bold text-primary"
-                    >Escalabilidad</span
-                  >
-                  <span
-                    class="px-3 py-1 rounded-md bg-surface-container-highest text-label text-[10px] uppercase font-bold text-primary"
-                    >Rendimiento</span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Step 4 -->
-            <div
-              class="bg-surface p-10 rounded-xl ghost-border group hover:bg-surface-container-high transition-colors"
-            >
-              <div
-                class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-8"
-              >
-                <span
-                  class="material-symbols-outlined"
-                  data-icon="rocket_launch"
-                  >rocket_launch</span
-                >
-              </div>
-              <span
-                class="text-xs font-bold text-primary tracking-widest uppercase mb-2 block"
-                >Fase 04</span
-              >
-              <h3 class="text-2xl font-headline font-bold mb-4 text-on-surface">
-                Despliegue
-              </h3>
-              <p class="text-on-surface-variant text-sm leading-relaxed">
-                El lanzamiento es solo el comienzo. Garantizamos una entrega
-                fluida y un monitoreo continuo.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Core Expertise (Redesigned) -->
-      <section class="py-32 px-8 bg-surface">
-        <div class="max-w-[1440px] mx-auto">
-          <div
-            class="flex flex-col lg:flex-row justify-between items-end gap-10 mb-24"
-          >
-            <div class="max-w-2xl">
-              <span
-                class="text-primary font-bold tracking-[0.2em] uppercase text-sm mb-4 block"
-                >Capacidades</span
-              >
-              <h2
-                class="text-4xl md:text-6xl font-headline font-bold text-on-surface tracking-tight"
-              >
-                Nuestra Experiencia Central
-              </h2>
-            </div>
-            <p class="text-xl text-on-surface-variant max-w-md lg:text-right">
-              Los pilares arquitectónicos que sostienen cada proyecto de alto
-              rendimiento de Kinetic.
-            </p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Expertise 1: UI/UX -->
-            <div
-              class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
-            >
-              <div class="aspect-[4/5] overflow-hidden relative">
-                <img
-                  alt="Espacio de trabajo de diseño UI/UX de alta fidelidad"
-                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf1vErvuz0XUBEc7p6qA1cBoIQ8-Xf5XQGb9VkRep7EYYtMlj5LKZ3ygLb2bc81l-Fa33WNMHR-6ZNVE2IXO_dr2-r2orE59bhg2BdH9Jh6ng0s-oSzRiicH7Vx72n0KGIsB8UT34YGAiAa3CEIYm7pqMf74KJrIISnvcZnXzmhyGaid-96z0Tm12ulEjxY_5QLHRIKlfpChNNtbxdG4Zxhl2x76z77MABzJ8jtsbMQc_j-zPb16JDJziooaDIeYO4PRjjXTF7Obk"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-60"
-                ></div>
-              </div>
-              <div class="p-8 flex flex-col flex-grow">
-                <h4
-                  class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary transition-colors"
-                >
-                  Diseño UI/UX
-                </h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                  Creación de interfaces intuitivas y de alta fidelidad que
-                  guían a los usuarios con precisión arquitectónica y claridad
-                  estética.
-                </p>
-                <div class="mt-auto pt-4 border-t border-white/5">
-                  <span
-                    class="text-[10px] font-bold text-primary tracking-widest uppercase"
-                    >Estrategia y Movimiento</span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Expertise 2: Full-Stack -->
-            <div
-              class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
-            >
-              <div class="aspect-[4/5] overflow-hidden relative">
-                <img
-                  alt="Estación de trabajo de desarrollo full-stack profesional con múltiples monitores"
-                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8m2TeI8d21S012saB5isMSwQzeJ2DcSt8CnP86V827yFvJpHso1DRoT8rDT0Go5Tn_YeW6hicHY5ihmSVg2ygpip1tSP4YiNDATifcGP2F15LXZUEC6_12ZNLto5h_KufHca5E5QkHy2c9pagSKTlzm3iS2OmDSeyT1j8D-EpcyGoDRvyGHe1A8IiwzrtgWLRLWvKKvhI26r6Bd7yifvD5VUU4GwaaO7la5FdNwZEcH3XzFWh1dqxvZDsTOtD8UnTdUxT42od14A"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-60"
-                ></div>
-              </div>
-              <div class="p-8 flex flex-col flex-grow">
-                <h4
-                  class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary transition-colors"
-                >
-                  Desarrollo Full-Stack
-                </h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                  Ingeniería de extremo a extremo desde frontends reactivos
-                  hasta arquitecturas backend robustas y escalables construidas
-                  para durar.
-                </p>
-                <div class="mt-auto pt-4 border-t border-white/5">
-                  <span
-                    class="text-[10px] font-bold text-primary tracking-widest uppercase"
-                    >Ingeniería y Escala</span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Expertise 3: Design Systems -->
-            <div
-              class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
-            >
-              <div class="aspect-[4/5] overflow-hidden relative">
-                <img
-                  alt="Arquitectura de componentes de sistemas de diseño"
-                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSquNZieKbENYdj1W7WOGcGEPIytySSVgpWHDH1nPxMY3SHOAtFzy8aUjbyUZCzPzqEDviY5a7X9CdZjtKBsAlnxqvAgE0QT3xF0o5qh8gOeR55rINZGG7qbayJRv9oSjqQzDr77VaUXrET2zLYF8fbIciwa_wVS28dApiF5kBlIesHhoZRuZXd6VqU9_RQPWd51behbEvN0IwRvsVUreV3QX6-E5V09vh9nXNcNqWPRXQeDYpRzV9lf7sCKzoeyxfVOpdYwTRq-g"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-60"
-                ></div>
-              </div>
-              <div class="p-8 flex flex-col flex-grow">
-                <h4
-                  class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary transition-colors"
-                >
-                  Sistemas de Diseño
-                </h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                  Escalando la consistencia en las organizaciones con
-                  bibliotecas de componentes modulares y estrictos estándares
-                  visuales.
-                </p>
-                <div class="mt-auto pt-4 border-t border-white/5">
-                  <span
-                    class="text-[10px] font-bold text-primary tracking-widest uppercase"
-                    >Eficiencia y Consistencia</span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- Expertise 4: Performance -->
-            <div
-              class="group relative flex flex-col bg-surface-container-low rounded-2xl overflow-hidden border border-white/5 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)]"
-            >
-              <div class="aspect-[4/5] overflow-hidden relative">
-                <img
-                  alt="Panel de optimización de rendimiento"
-                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGcjI-97ihb3NoNGh-DUFvEhEa8YZEHpUgrIKigx0kuFh59g41B-lItqYpGRZqZiFeet7dWhW4CwVorEYOsWRoyF7lEy0x7fLjLZn5-YCXNNhnAQlISiSZJ9et9zvdE9zAbzYxbEhUdkV74ijQyskbTNzRRCAoLIpxr8RZw0Mhp7T4tXRHmig3_giXS2gIjwSameQ72loWoBTN6pZTyPWmEOvxc6E9FbXPBaWHhgUkoyGbAyNqb6Wmcd8uTXHldc6t6PoyWXcgsu8"
-                />
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-60"
-                ></div>
-              </div>
-              <div class="p-8 flex flex-col flex-grow">
-                <h4
-                  class="text-2xl font-bold font-headline mb-3 text-on-surface group-hover:text-primary transition-colors"
-                >
-                  Rendimiento
-                </h4>
-                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
-                  Optimización para una velocidad extrema, accesibilidad global
-                  y SEO técnico para asegurar el máximo rendimiento de la
-                  plataforma.
-                </p>
-                <div class="mt-auto pt-4 border-t border-white/5">
-                  <span
-                    class="text-[10px] font-bold text-primary tracking-widest uppercase"
-                    >Optimización y SEO</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Toolkit Section -->
-      <section class="py-24 px-8 bg-surface-container-lowest overflow-hidden">
+          class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"
+        ></div>
         <div
-          class="max-w-[1440px] mx-auto border-y border-outline-variant/10 py-20"
-        >
-          <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
-            <div class="md:col-span-2">
-              <h2 class="text-3xl font-headline font-bold text-on-surface mb-4">
-                Nuestro Toolkit Moderno
-              </h2>
-              <p class="text-on-surface-variant">
-                Aprovechamos los frameworks y herramientas más avanzados para
-                construir productos digitales sostenibles.
-              </p>
-            </div>
-            <div
-              class="md:col-span-3 flex flex-wrap justify-center md:justify-end gap-10 opacity-60 hover:opacity-100 transition-opacity"
-            >
-              <div class="flex flex-col items-center gap-3">
-                <span class="text-3xl font-bold text-slate-100 font-headline"
-                  >React</span
-                >
-                <span class="w-1 h-1 rounded-full bg-primary"></span>
-              </div>
-              <div class="flex flex-col items-center gap-3">
-                <span class="text-3xl font-bold text-slate-100 font-headline"
-                  >Next.js</span
-                >
-                <span class="w-1 h-1 rounded-full bg-primary"></span>
-              </div>
-              <div class="flex flex-col items-center gap-3">
-                <span class="text-3xl font-bold text-slate-100 font-headline"
-                  >Tailwind</span
-                >
-                <span class="w-1 h-1 rounded-full bg-primary"></span>
-              </div>
-              <div class="flex flex-col items-center gap-3">
-                <span class="text-3xl font-bold text-slate-100 font-headline"
-                  >Figma</span
-                >
-                <span class="w-1 h-1 rounded-full bg-primary"></span>
-              </div>
-              <div class="flex flex-col items-center gap-3">
-                <span class="text-3xl font-bold text-slate-100 font-headline"
-                  >Framer</span
-                >
-                <span class="w-1 h-1 rounded-full bg-primary"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- CTA Section -->
-      <section class="py-32 px-8">
-        <div class="max-w-[1440px] mx-auto">
-          <div
-            class="relative bg-gradient-to-br from-surface-container-high to-surface rounded-[2.5rem] p-12 md:p-24 overflow-hidden text-center ghost-border"
+          class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-tertiary/5 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2"
+        ></div>
+        <div class="relative z-10">
+          <h2
+            class="text-4xl md:text-6xl font-headline font-bold mb-8 text-on-surface max-w-3xl mx-auto tracking-tight"
           >
-            <div
-              class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 blur-[100px] rounded-full -translate-y-1/2 translate-x-1/2"
-            ></div>
-            <div
-              class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-tertiary/5 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2"
-            ></div>
-            <div class="relative z-10">
-              <h2
-                class="text-4xl md:text-6xl font-headline font-bold mb-8 text-on-surface max-w-3xl mx-auto tracking-tight"
-              >
-                ¿Listo para Construir tu <br />Núcleo Digital?
-              </h2>
-              <p class="text-xl text-on-surface-variant max-w-xl mx-auto mb-12">
-                Únete a nosotros en la construcción de la próxima generación de
-                experiencias digitales. Ingeniemos algo extraordinario juntos.
-              </p>
-              <button
-                class="px-10 py-5 rounded-full bg-gradient-to-br from-primary to-on-primary-container text-on-primary font-bold text-lg hover:shadow-[0_0_40px_-5px_#4cd7f6] transition-all duration-500 hover:scale-105"
-              >
-                Inicia tu Proyecto
-              </button>
-            </div>
-          </div>
+            ¿Listo para que tu sitio web <br />sea tu mejor vendedor?
+          </h2>
+          <p class="text-xl text-on-surface-variant max-w-xl mx-auto mb-12">
+            Agenda una consultoría GRATUITA y descubramos juntos cómo una
+            estrategia digital PERSONALIZADA puede hacer crecer tu facturación.
+          </p>
+          <button
+            class="px-10 py-5 rounded-full bg-gradient-to-br from-primary to-on-primary-container text-on-primary font-bold text-lg hover:shadow-[0_0_40px_-5px_#4cd7f6] transition-all duration-500 hover:scale-105"
+          >
+            ¡Hablemos de mi proyecto!
+          </button>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </section>
+</main>
 {% endblock %}
