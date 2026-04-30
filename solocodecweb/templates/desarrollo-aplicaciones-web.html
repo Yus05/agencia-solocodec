@@ -1,426 +1,417 @@
-{% extends 'base.html' %}
-
-{% block title %}Desarrollo de Aplicaciones Web{% endblock %}
-
-{% block content %}
-    <main class="pt-20">
-      <!-- Hero Section -->
-      <section
-        class="relative min-h-[819px] flex items-center overflow-hidden py-20 px-8"
-      >
+{% extends 'base.html' %} {% block title %}Desarrollo de Aplicaciones Web{%
+endblock %} {% block content %}
+<main class="pt-20">
+  <!-- Hero Section -->
+  <section
+    class="relative min-h-[819px] flex items-center overflow-hidden py-20 px-8"
+  >
+    <div
+      class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10"
+    >
+      <div class="space-y-8">
         <div
-          class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10"
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-surface-container-highest border border-outline-variant/20 text-tertiary-fixed-dim text-[10px] font-bold tracking-[0.2em] uppercase"
         >
-          <div class="space-y-8">
-            <div
-              class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-surface-container-highest border border-outline-variant/20 text-tertiary-fixed-dim text-[10px] font-bold tracking-[0.2em] uppercase"
-            >
-              Ingeniería Digital
-            </div>
-            <h1
-              class="text-5xl md:text-7xl font-bold font-headline leading-[1.1] tracking-tight text-on-surface"
-            >
-              Ingeniería de Alto Rendimiento:
-              <span class="text-primary">Desarrollo de Aplicaciones Web</span> a
-              Medida
-            </h1>
-            <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">
-              Construimos aplicaciones web robustas, escalables y de alto
-              rendimiento diseñadas para resolver desafíos de negocio complejos
-              a través de la precisión arquitectónica.
-            </p>
-            <div class="flex gap-4">
-              <button
-                class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-8 py-4 rounded-full font-bold hover:shadow-[0_0_30px_-5px_rgba(76,215,246,0.4)] transition-all"
-              >
-                Consulta tu Proyecto
-              </button>
-              <button
-                class="border border-outline-variant/30 text-primary px-8 py-4 rounded-full font-bold hover:bg-surface-container-high transition-all"
-              >
-                Ver Portafolio
-              </button>
-            </div>
-          </div>
-          <div class="relative hidden md:block">
-            <div
-              class="absolute inset-0 bg-primary/20 blur-[120px] rounded-full"
-            ></div>
-            <div
-              class="relative aspect-square rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/20 shadow-2xl"
-            >
-              <img
-                alt="Entorno de sala de servidores de alta tecnología"
-                class="w-full h-full object-cover mix-blend-screen opacity-80 hover:scale-105 transition-transform duration-1000"
-                data-alt="Toma cinematográfica amplia de una sala de servidores futurista en azul marino oscuro con tiras de luz cian brillantes a lo largo de los pasillos y racks de hardware de alto rendimiento, representando ingeniería empresarial e infraestructura digital"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBePWUv3-DBOS67EA1ZsD0hKzKmmRBURMoEiFsfOFAIqgkmEhpHRDiIw5bjxHZMf6AWziu1AXzunV-537DvF6Eb-w8b-EtyO5OREN2DxxY-9392EoUD9c1zNC5W8J1h-tWTxbAwsbvnaDQjK3lE3UOYABM9TwRXEow3clbeq3bJDlvn7kCnroisJNbXTt_3gWnLDVG5J0Mz8nM7EeQAxHKB_FlLVx9sYwFPdxSFfl7AE2buGp0TgIKP1CXzS_7I0Z1pseA2lTMmUBQ"
-              />
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"
-              ></div>
-            </div>
-          </div>
+          Software Espcializado
         </div>
-      </section>
-      <!-- Bento Grid: Our Core Architecture -->
-      <section class="py-28 px-8 bg-surface-container-low">
-        <div class="max-w-7xl mx-auto">
-          <div class="mb-20 space-y-4">
-            <h2
-              class="text-3xl md:text-5xl font-bold font-headline tracking-tight"
-            >
-              Nuestra Arquitectura Central
-            </h2>
-            <div class="h-1 w-20 bg-primary"></div>
-          </div>
-          <div
-            class="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-6 h-auto md:h-[600px]"
+        <h1
+          class="text-5xl md:text-7xl font-bold font-headline leading-[1.1] tracking-tight text-on-surface"
+        >
+          <span class="text-primary">Desarrollo de Aplicaciones</span>
+          a Medida
+        </h1>
+        <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl">
+          Creamos Software diseñado para resolver los desafíos específicos de tu
+          empresa. Desde un CRM personalizado hasta plataformas complejas,
+          nuestro enfoque en el Desarrollo de Software garantiza herramientas
+          robustas, escalables y seguras que impulsan tu crecimiento.
+        </p>
+        <div class="flex gap-4">
+          <button
+            class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-8 py-4 rounded-full font-bold hover:shadow-[0_0_30px_-5px_rgba(76,215,246,0.4)] transition-all"
           >
-            <!-- Card 1: Scalability -->
-            <div
-              class="md:col-span-3 md:row-span-1 p-8 rounded-xl bg-surface-container-high border border-outline-variant/10 flex flex-col justify-between group hover:bg-surface-container-highest transition-all duration-500"
-            >
-              <div class="space-y-4">
-                <span
-                  class="material-symbols-outlined text-primary text-4xl"
-                  style="font-variation-settings: &quot;FILL&quot; 0"
-                  >cloud_done</span
-                >
-                <h3 class="text-2xl font-bold font-headline">Escalabilidad</h3>
-                <p class="text-on-surface-variant">
-                  Arquitecturas nativas de la nube que crecen orgánicamente con
-                  su base de usuarios sin degradación del rendimiento.
-                </p>
-              </div>
-            </div>
-            <!-- Card 2: Security -->
-            <div
-              class="md:col-span-3 md:row-span-2 p-8 rounded-xl bg-surface-container-high border border-outline-variant/10 flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container-highest transition-all duration-500"
-            >
-              <div class="relative z-10 space-y-4">
-                <span
-                  class="material-symbols-outlined text-primary text-4xl"
-                  style="font-variation-settings: &quot;FILL&quot; 1"
-                  >security</span
-                >
-                <h3 class="text-2xl font-bold font-headline">Seguridad</h3>
-                <p class="text-on-surface-variant">
-                  Cifrado de grado empresarial y monitoreo de amenazas en tiempo
-                  real integrados en la base de cada desarrollo.
-                </p>
-              </div>
-              <div class="mt-8 relative z-10 grid grid-cols-2 gap-2">
-                <div
-                  class="h-24 rounded-lg bg-surface-container-lowest border border-outline-variant/20 p-3"
-                >
-                  <div class="w-full h-1 bg-primary/20 rounded-full mb-2"></div>
-                  <div class="w-2/3 h-1 bg-primary/20 rounded-full mb-2"></div>
-                  <div class="w-1/2 h-1 bg-primary rounded-full"></div>
-                </div>
-                <div
-                  class="h-24 rounded-lg bg-surface-container-lowest border border-outline-variant/20 p-3"
-                >
-                  <div class="w-full h-1 bg-primary/20 rounded-full mb-2"></div>
-                  <div class="w-full h-1 bg-primary rounded-full mb-2"></div>
-                  <div class="w-1/3 h-1 bg-primary/20 rounded-full"></div>
-                </div>
-              </div>
-              <div
-                class="absolute -right-10 -bottom-10 opacity-5 group-hover:scale-110 transition-transform duration-700"
-              >
-                <span class="material-symbols-outlined text-[200px]"
-                  >verified_user</span
-                >
-              </div>
-            </div>
-            <!-- Card 3: Custom Workflows -->
-            <div
-              class="md:col-span-3 md:row-span-1 p-8 rounded-xl bg-surface-container-high border border-outline-variant/10 flex items-center gap-8 group hover:bg-surface-container-highest transition-all duration-500"
-            >
-              <div class="flex-1 space-y-4">
-                <h3 class="text-2xl font-bold font-headline">
-                  Flujos de Trabajo Personalizados
-                </h3>
-                <p class="text-on-surface-variant">
-                  Lógica a medida para automatizar sus procesos de negocio
-                  únicos con precisión quirúrgica.
-                </p>
-              </div>
-              <div
-                class="p-4 rounded-full bg-surface-container-lowest text-primary"
-              >
-                <span class="material-symbols-outlined text-4xl"
-                  >account_tree</span
-                >
-              </div>
-            </div>
-            <!-- Card 4: API-First Design -->
-            <div
-              class="md:col-span-6 p-8 rounded-xl bg-surface-container border border-outline-variant/10 flex flex-col md:flex-row justify-between items-center group hover:bg-surface-container-high transition-all duration-500"
-            >
-              <div class="space-y-4 md:w-1/2">
-                <h3 class="text-2xl font-bold font-headline">
-                  Diseño API-First
-                </h3>
-                <p class="text-on-surface-variant">
-                  Integración perfecta con su ecosistema existente a través de
-                  arquitecturas modulares y desacopladas.
-                </p>
-              </div>
-              <div class="flex gap-4 mt-6 md:mt-0">
-                <div
-                  class="px-4 py-2 rounded bg-surface-container-highest border border-outline-variant/20 text-xs font-mono text-tertiary-fixed-dim"
-                >
-                  GET /v1/core
-                </div>
-                <div
-                  class="px-4 py-2 rounded bg-surface-container-highest border border-outline-variant/20 text-xs font-mono text-primary"
-                >
-                  200 OK
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Our Tech Stack Section -->
-      <section class="py-28 px-8">
-        <div class="max-w-7xl mx-auto">
-          <div
-            class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8"
+            Haz una Consulta Gratuita por tu Proyecto
+          </button>
+          <button
+            class="border border-outline-variant/30 text-primary px-8 py-4 rounded-full font-bold hover:bg-surface-container-high transition-all"
           >
-            <div class="space-y-4">
-              <h2
-                class="text-3xl md:text-5xl font-bold font-headline tracking-tight"
-              >
-                Nuestro Stack Tecnológico
-              </h2>
-              <p class="text-on-surface-variant max-w-lg">
-                Aprovechamos los frameworks más modernos y estables para
-                garantizar que su aplicación esté preparada para el futuro.
-              </p>
-            </div>
-          </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4">
-            <!-- Tech Items -->
-            <div
-              class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <div
-                class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
-              >
-                <span class="text-sm font-bold font-headline">NEXT</span>
-              </div>
-              <span class="text-xs font-bold tracking-widest uppercase"
-                >Next.js</span
-              >
-            </div>
-            <div
-              class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <div
-                class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
-              >
-                <span class="text-sm font-bold font-headline">REACT</span>
-              </div>
-              <span class="text-xs font-bold tracking-widest uppercase"
-                >React</span
-              >
-            </div>
-            <div
-              class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <div
-                class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
-              >
-                <span class="text-sm font-bold font-headline">NODE</span>
-              </div>
-              <span class="text-xs font-bold tracking-widest uppercase"
-                >Node.js</span
-              >
-            </div>
-            <div
-              class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <div
-                class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
-              >
-                <span class="text-sm font-bold font-headline">PY</span>
-              </div>
-              <span class="text-xs font-bold tracking-widest uppercase"
-                >Python</span
-              >
-            </div>
-            <div
-              class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <div
-                class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
-              >
-                <span class="text-sm font-bold font-headline">PSQL</span>
-              </div>
-              <span class="text-xs font-bold tracking-widest uppercase"
-                >PostgreSQL</span
-              >
-            </div>
-            <div
-              class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <div
-                class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
-              >
-                <span class="text-sm font-bold font-headline">AWS</span>
-              </div>
-              <span class="text-xs font-bold tracking-widest uppercase"
-                >AWS</span
-              >
-            </div>
-            <div
-              class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
-            >
-              <div
-                class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
-              >
-                <span class="text-sm font-bold font-headline">DKR</span>
-              </div>
-              <span class="text-xs font-bold tracking-widest uppercase"
-                >Docker</span
-              >
-            </div>
-          </div>
+            Ver CRM Freelancers
+          </button>
         </div>
-      </section>
-      <!-- Development Lifecycle Section -->
-      <section
-        class="py-28 px-8 bg-surface-container-lowest relative overflow-hidden"
-      >
-        <div class="max-w-7xl mx-auto relative z-10">
-          <div class="mb-20 text-center">
-            <h2
-              class="text-3xl md:text-5xl font-bold font-headline tracking-tight"
-            >
-              Ciclo de Vida de Desarrollo
-            </h2>
-            <p class="text-on-surface-variant mt-4">
-              Un enfoque estructurado para la ingeniería de la excelencia
-              digital.
-            </p>
-          </div>
-          <div class="relative grid md:grid-cols-5 gap-8">
-            <!-- Progress Line -->
-            <div
-              class="absolute top-1/2 left-0 w-full h-[1px] bg-outline-variant/20 hidden md:block"
-            ></div>
-            <!-- Steps -->
-            <div
-              class="relative z-10 flex flex-col items-center text-center space-y-6 group"
-            >
-              <div
-                class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-primary group-hover:border-primary transition-colors duration-300 bg-surface"
-              >
-                <span class="material-symbols-outlined">search</span>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg font-headline">Descubrimiento</h4>
-                <p class="text-sm text-on-surface-variant mt-2 px-4">
-                  Análisis profundo de requisitos y objetivos de negocio.
-                </p>
-              </div>
-            </div>
-            <div
-              class="relative z-10 flex flex-col items-center text-center space-y-6 group"
-            >
-              <div
-                class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-primary group-hover:border-primary transition-colors duration-300 bg-surface"
-              >
-                <span class="material-symbols-outlined">architecture</span>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg font-headline">Arquitectura</h4>
-                <p class="text-sm text-on-surface-variant mt-2 px-4">
-                  Definición del esquema estructural y esquemas de datos.
-                </p>
-              </div>
-            </div>
-            <div
-              class="relative z-10 flex flex-col items-center text-center space-y-6 group"
-            >
-              <div
-                class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-primary group-hover:border-primary transition-colors duration-300 bg-surface"
-              >
-                <span class="material-symbols-outlined">bolt</span>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg font-headline">Sprints Ágiles</h4>
-                <p class="text-sm text-on-surface-variant mt-2 px-4">
-                  Desarrollo iterativo con ciclos frecuentes de
-                  retroalimentación.
-                </p>
-              </div>
-            </div>
-            <div
-              class="relative z-10 flex flex-col items-center text-center space-y-6 group"
-            >
-              <div
-                class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-primary group-hover:border-primary transition-colors duration-300 bg-surface"
-              >
-                <span class="material-symbols-outlined">verified</span>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg font-headline">
-                  Control de Calidad y Pruebas
-                </h4>
-                <p class="text-sm text-on-surface-variant mt-2 px-4">
-                  Rigurosas pruebas de estrés manuales y automatizadas.
-                </p>
-              </div>
-            </div>
-            <div
-              class="relative z-10 flex flex-col items-center text-center space-y-6 group"
-            >
-              <div
-                class="w-16 h-16 rounded-full bg-primary border-2 border-primary flex items-center justify-center text-on-primary shadow-lg shadow-primary/40"
-              >
-                <span class="material-symbols-outlined">rocket_launch</span>
-              </div>
-              <div>
-                <h4 class="font-bold text-lg font-headline">Despliegue</h4>
-                <p class="text-sm text-on-surface-variant mt-2 px-4">
-                  Transición fluida a entornos de producción en vivo.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- CTA Section -->
-      <section class="py-32 px-8">
+      </div>
+      <div class="relative hidden md:block">
         <div
-          class="max-w-7xl mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-surface-container-high to-surface-container-lowest border border-outline-variant/10 p-12 md:p-24 text-center relative"
+          class="absolute inset-0 bg-primary/20 blur-[120px] rounded-full"
+        ></div>
+        <div
+          class="relative aspect-square rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/20 shadow-2xl"
         >
+          <img
+            alt="Entorno de sala de servidores de alta tecnología"
+            class="w-full h-full object-cover mix-blend-screen opacity-80 hover:scale-105 transition-transform duration-1000"
+            data-alt="Toma cinematográfica amplia de una sala de servidores futurista en azul marino oscuro con tiras de luz cian brillantes a lo largo de los pasillos y racks de hardware de alto rendimiento, representando ingeniería empresarial e infraestructura digital"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBePWUv3-DBOS67EA1ZsD0hKzKmmRBURMoEiFsfOFAIqgkmEhpHRDiIw5bjxHZMf6AWziu1AXzunV-537DvF6Eb-w8b-EtyO5OREN2DxxY-9392EoUD9c1zNC5W8J1h-tWTxbAwsbvnaDQjK3lE3UOYABM9TwRXEow3clbeq3bJDlvn7kCnroisJNbXTt_3gWnLDVG5J0Mz8nM7EeQAxHKB_FlLVx9sYwFPdxSFfl7AE2buGp0TgIKP1CXzS_7I0Z1pseA2lTMmUBQ"
+          />
           <div
-            class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(76,215,246,0.1),transparent_50%)]"
+            class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"
           ></div>
-          <div class="relative z-10 max-w-2xl mx-auto space-y-8">
-            <h2
-              class="text-4xl md:text-6xl font-bold font-headline tracking-tight leading-tight"
-            >
-              ¿Listo para Escalar tus Operaciones Digitales?
-            </h2>
-            <p class="text-xl text-on-surface-variant leading-relaxed">
-              Hablemos sobre cómo nuestro enfoque arquitectónico puede
-              transformar sus flujos de trabajo en aplicaciones de alto
-              rendimiento.
-            </p>
-            <div class="pt-8">
-              <button
-                class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-12 py-5 rounded-full font-extrabold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/20"
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bento Grid: Our Core Architecture -->
+  <section class="py-28 px-8 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-20 space-y-4">
+        <h2 class="text-3xl md:text-5xl font-bold font-headline tracking-tight">
+          Nuestra Base Tecnológica
+        </h2>
+        <div class="h-1 w-20 bg-primary"></div>
+      </div>
+      <div
+        class="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-6 h-auto md:h-[600px]"
+      >
+        <!-- Card 1: Scalability -->
+        <div
+          class="md:col-span-3 md:row-span-1 p-8 rounded-xl bg-surface-container-high border border-outline-variant/10 flex flex-col justify-between group hover:bg-surface-container-highest transition-all duration-500"
+        >
+          <div class="space-y-4">
+            <!-- <span
+              class="material-symbols-outlined text-primary text-4xl"
+              style="font-variation-settings: &quot;FILL&quot; 0"
+              >cloud_done</span
+            > -->
+            <h3 class="text-2xl font-bold font-headline">
+              <span
+                class="material-symbols-outlined text-primary text-4xl pr-2"
+                style="font-variation-settings: &quot;FILL&quot; 0"
+                >cloud_done</span
               >
-                Consulta tu Proyecto
-              </button>
+              Escalabilidad
+            </h3>
+            <p class="text-on-surface-variant">
+              El Software crece con tu negocio. Diseñamos aplicaciones
+              preparadas para aumentar su capacidad de respuesta a medida que tu
+              base de usuarios se expande.
+            </p>
+          </div>
+        </div>
+        <!-- Card 2: Security -->
+        <div
+          class="md:col-span-3 md:row-span-2 p-8 rounded-xl bg-surface-container-high border border-outline-variant/10 flex flex-col justify-between relative overflow-hidden group hover:bg-surface-container-highest transition-all duration-500"
+        >
+          <div class="relative z-10 space-y-4">
+            <span
+              class="material-symbols-outlined text-primary text-4xl"
+              style="font-variation-settings: &quot;FILL&quot; 1"
+              >security</span
+            >
+            <h3 class="text-2xl font-bold font-headline">Seguridad</h3>
+            <p class="text-on-surface-variant">
+              Priorizamos la Ciberseguridad en cada capa. Protegemos tus datos y
+              los de tus clientes con protocolos avanzados para garantizar un
+              entorno digital confiable y libre de riesgos.
+            </p>
+          </div>
+          <div class="mt-8 relative z-10 grid grid-cols-2 gap-2">
+            <div
+              class="h-24 rounded-lg bg-surface-container-lowest border border-outline-variant/20 p-3"
+            >
+              <div class="w-full h-1 bg-primary/20 rounded-full mb-2"></div>
+              <div class="w-2/3 h-1 bg-primary/20 rounded-full mb-2"></div>
+              <div class="w-1/2 h-1 bg-primary rounded-full"></div>
+            </div>
+            <div
+              class="h-24 rounded-lg bg-surface-container-lowest border border-outline-variant/20 p-3"
+            >
+              <div class="w-full h-1 bg-primary/20 rounded-full mb-2"></div>
+              <div class="w-full h-1 bg-primary rounded-full mb-2"></div>
+              <div class="w-1/3 h-1 bg-primary/20 rounded-full"></div>
+            </div>
+          </div>
+          <div
+            class="absolute -right-10 -bottom-10 opacity-5 group-hover:scale-110 transition-transform duration-700"
+          >
+            <span class="material-symbols-outlined text-[200px]"
+              >verified_user</span
+            >
+          </div>
+        </div>
+        <!-- Card 3: Custom Workflows -->
+        <div
+          class="md:col-span-3 md:row-span-1 p-8 rounded-xl bg-surface-container-high border border-outline-variant/10 flex items-center gap-8 group hover:bg-surface-container-highest transition-all duration-500"
+        >
+          <div class="flex-1 space-y-4">
+            <h3 class="text-2xl font-bold font-headline">
+              Flujos de Trabajo Personalizados
+            </h3>
+            <p class="text-on-surface-variant">
+              Optimizamos tus procesos. Creamos sistemas que automatizan tus
+              tareas repetitivas, permitiéndote enfocar tu energía en lo que
+              realmente importa: vender.
+            </p>
+          </div>
+          <div
+            class="p-4 rounded-full bg-surface-container-lowest text-primary"
+          >
+            <span class="material-symbols-outlined text-4xl">account_tree</span>
+          </div>
+        </div>
+        <!-- Card 4: API-First Design -->
+        <div
+          class="md:col-span-6 p-8 rounded-xl bg-surface-container border border-outline-variant/10 flex flex-col md:flex-row justify-between items-center group hover:bg-surface-container-high transition-all duration-500"
+        >
+          <div class="space-y-4 md:w-1/2">
+            <h3 class="text-2xl font-bold font-headline">
+              Integración vía Apis
+            </h3>
+            <p class="text-on-surface-variant">
+              Conectividad sin límites. Desarrollamos Apis personalizadas que
+              permiten que tu nueva aplicación web se comunique perfectamente
+              con otras herramientas que ya utilizas.
+            </p>
+          </div>
+          <div class="flex gap-4 mt-6 md:mt-0">
+            <div
+              class="px-4 py-2 rounded bg-surface-container-highest border border-outline-variant/20 text-xs font-mono text-tertiary-fixed-dim"
+            >
+              GET /v1/core
+            </div>
+            <div
+              class="px-4 py-2 rounded bg-surface-container-highest border border-outline-variant/20 text-xs font-mono text-primary"
+            >
+              200 OK
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </section>
+  <!-- Our Tech Stack Section -->
+  <section class="py-28 px-8">
+    <div class="max-w-7xl mx-auto">
+      <div
+        class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8"
+      >
+        <div class="space-y-4">
+          <h2
+            class="text-3xl md:text-5xl font-bold font-headline tracking-tight"
+          >
+            Nuestro Stack Tecnológico
+          </h2>
+          <p class="text-on-surface-variant max-w-lg">
+            Utilizamos las tecnologías más potentes y versátiles para asegurar
+            que tu inversión sea duradera y eficiente.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4">
+        <!-- Tech Items -->
+        <div
+          class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
+        >
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
+          >
+            <span class="text-sm font-bold font-headline">NEXT</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase"
+            >Next.js</span
+          >
+        </div>
+        <div
+          class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
+        >
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
+          >
+            <span class="text-sm font-bold font-headline">REACT</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase">React</span>
+        </div>
+        <div
+          class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
+        >
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
+          >
+            <span class="text-sm font-bold font-headline">NODE</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase"
+            >Node.js</span
+          >
+        </div>
+        <div
+          class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
+        >
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
+          >
+            <span class="text-sm font-bold font-headline">PY</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase"
+            >Python</span
+          >
+        </div>
+        <div
+          class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
+        >
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
+          >
+            <span class="text-sm font-bold font-headline">MySQL</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase">MySQL</span>
+        </div>
+        <div
+          class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
+        >
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
+          >
+            <span class="text-sm font-bold font-headline">AWS</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase">AWS</span>
+        </div>
+        <div
+          class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/10 flex flex-col items-center justify-center gap-4 hover:border-primary/50 transition-all duration-300 group"
+        >
+          <div
+            class="w-12 h-12 flex items-center justify-center rounded-lg bg-surface-container-highest group-hover:text-primary transition-colors"
+          >
+            <span class="text-sm font-bold font-headline">DKR</span>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase"
+            >Docker</span
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Development Lifecycle Section -->
+  <section
+    class="py-28 px-8 bg-surface-container-lowest relative overflow-hidden"
+  >
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="mb-20 text-center">
+        <h2 class="text-3xl md:text-5xl font-bold font-headline tracking-tight">
+          Ciclo de Vida de Desarrollo
+        </h2>
+      </div>
+      <div class="relative grid md:grid-cols-5 gap-8">
+        <!-- Progress Line -->
+        <div
+          class="absolute top-1/2 left-0 w-full h-[1px] bg-outline-variant/20 hidden md:block"
+        ></div>
+        <!-- Steps -->
+        <div
+          class="relative z-10 flex flex-col items-center text-center space-y-6 group"
+        >
+          <div
+            class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-primary group-hover:border-primary transition-colors duration-300 bg-surface"
+          >
+            <span class="material-symbols-outlined">search</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg font-headline">Descubrimiento</h4>
+            <p class="text-sm text-on-surface-variant mt-2 px-4">
+              Escuchamos tus necesidades para definir el alcance de tu Software.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative z-10 flex flex-col items-center text-center space-y-6 group"
+        >
+          <div
+            class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-primary group-hover:border-primary transition-colors duration-300 bg-surface"
+          >
+            <span class="material-symbols-outlined">architecture</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg font-headline">Estrategia</h4>
+            <p class="text-sm text-on-surface-variant mt-2 px-4">
+              Trazamos el plan técnico para tu CRM o aplicación personalizada.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative z-10 flex flex-col items-center text-center space-y-6 group"
+        >
+          <div
+            class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-primary group-hover:border-primary transition-colors duration-300 bg-surface"
+          >
+            <span class="material-symbols-outlined">bolt</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg font-headline">Desarrollo Ágil</h4>
+            <p class="text-sm text-on-surface-variant mt-2 px-4">
+              Construimos tu herramienta con entregas constantes para que veas
+              el progreso.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative z-10 flex flex-col items-center text-center space-y-6 group"
+        >
+          <div
+            class="w-16 h-16 rounded-full bg-surface-container-high border-2 border-outline-variant flex items-center justify-center text-primary group-hover:border-primary transition-colors duration-300 bg-surface"
+          >
+            <span class="material-symbols-outlined">verified</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg font-headline">Control y Seguridad</h4>
+            <p class="text-sm text-on-surface-variant mt-2 px-4">
+              Realizamos pruebas de Ciberseguridad y rendimiento antes del
+              lanzamiento.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative z-10 flex flex-col items-center text-center space-y-6 group"
+        >
+          <div
+            class="w-16 h-16 rounded-full bg-primary border-2 border-primary flex items-center justify-center text-on-primary shadow-lg shadow-primary/40"
+          >
+            <span class="material-symbols-outlined">rocket_launch</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg font-headline">Despliegue</h4>
+            <p class="text-sm text-on-surface-variant mt-2 px-4">
+              Ponemos tu plataforma en marcha, lista para transformar tu
+              negocio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA Section -->
+  <section class="py-32 px-8">
+    <div
+      class="max-w-7xl mx-auto rounded-3xl overflow-hidden bg-gradient-to-br from-surface-container-high to-surface-container-lowest border border-outline-variant/10 p-12 md:p-24 text-center relative"
+    >
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(76,215,246,0.1),transparent_50%)]"
+      ></div>
+      <div class="relative z-10 max-w-2xl mx-auto space-y-8">
+        <h2
+          class="text-4xl md:text-6xl font-bold font-headline tracking-tight leading-tight"
+        >
+          ¿Creamos el Software que tu Empresa Necesita?
+        </h2>
+        <p class="text-xl text-on-surface-variant leading-relaxed">
+          Estamos listos para construir la solución robusta, segura y escalable
+          que necesitas para hacer CRECER TU MARCA.
+        </p>
+        <div class="pt-8">
+          <button
+            class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-12 py-5 rounded-full font-extrabold text-lg hover:scale-105 active:scale-95 transition-all shadow-xl shadow-primary/20"
+          >
+            Iniciar mi proyecto ahora
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 {% endblock %}
