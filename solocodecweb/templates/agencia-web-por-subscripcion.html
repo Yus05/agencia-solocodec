@@ -1,332 +1,328 @@
-{% extends 'base.html' %}
-
-{% block title %}Agencia de Diseño Web por Subscripcion{% endblock %}
-
-{% block content %}
-    <main class="pt-32">
-      <!-- Hero Section -->
-      <section class="max-w-7xl mx-auto px-6 mb-20 md:mb-32 overflow-visible">
-        <div class="text-center mb-24">
-          <h1
-            class="font-headline text-5xl md:text-7xl font-bold tracking-tighter mb-6 text-on-surface"
+{% extends 'base.html' %} {% block title %}Agencia de Diseño Web por
+Subscripcion{% endblock %} {% block content %}
+<main class="pt-32">
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-6 mb-20 md:mb-32 overflow-visible">
+    <div class="text-center mb-24">
+      <h1
+        class="font-headline text-5xl md:text-7xl font-bold tracking-tight mb-8 hero-text-glow leading-[1.1]"
+      >
+        WebExpress:
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary block"
+          >Webs por Subscripción</span
+        >
+      </h1>
+      <p class="text-on-surface-variant text-lg mb-12 max-w-2xl mx-auto">
+        Desarrollamos una plataforma integral que permite a los negocios acceder
+        a un sitio web profesional mediante un modelo de suscripción mensual.
+      </p>
+    </div>
+    <div class="relative max-w-5xl mx-auto h-[400px] md:h-[600px]">
+      <!-- Background Glow Effects -->
+      <div
+        class="absolute -top-20 -left-20 w-96 h-96 bg-primary/20 blur-[120px] rounded-full"
+      ></div>
+      <div
+        class="absolute -bottom-20 -right-20 w-96 h-96 bg-tertiary/20 blur-[120px] rounded-full"
+      ></div>
+      <!-- Main Dashboard Container -->
+      <div
+        class="relative z-10 bg-surface-container-high rounded-3xl border border-outline-variant/20 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] overflow-hidden h-full"
+      >
+        <img
+          alt="Mockup del panel de alta fidelidad de WebExpress"
+          class="w-full h-full object-cover opacity-60"
+          data-alt="Interfaz moderna de panel de control en modo oscuro para herramienta de diseño web con visualizaciones de datos holográficas y componentes de UI elegantes"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy0ES8gFiIPYZqQEtlLRDd4Jq_awnUHYK8CHZFL485dxV_jWJxpaBZoRV0t_QYzGSAoommJyIiLGN1t1TpNb87vN1yhrrzn-DlP9oHpB2_M2f1yXic6dD5l4hW8LAlZWxiS3g9g3W1V6fgsoLPiJIVw2BQkBwJVpsRpCoRScHj_P3fOhSp_WpZC6VvTZXTA3EoI5VrczPgRtTwEedUCG_49oWeTNPGo8rcK6Ae-1IJLaMPehC9LhUPUsr2fFa69p7Ptu-SCDz5wuU"
+        />
+        <!-- Overlay Layer for Interaction Simulation -->
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent"
+        ></div>
+      </div>
+      <!-- Floating UI Component: Registration Step -->
+      <div
+        class="absolute -left-4 md:-left-12 top-10 z-30 w-64 md:w-80 bg-surface-container-highest/90 backdrop-blur-xl p-6 rounded-2xl border border-outline-variant/30 shadow-2xl animate-float"
+      >
+        <div class="flex items-center gap-3 mb-4">
+          <div
+            class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary"
           >
-            WebExpress
-          </h1>
-          <p
-            class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl mx-auto"
+            <span class="material-symbols-outlined text-sm">person_add</span>
+          </div>
+          <span class="text-xs font-bold uppercase tracking-widest text-primary"
+            >Paso 1: Onboarding</span
           >
-            El futuro del diseño web basado en suscripción
+        </div>
+        <h4 class="font-headline font-bold text-lg mb-2">
+          Registro de Cliente
+        </h4>
+        <div class="space-y-2">
+          <div
+            class="h-8 bg-surface-container rounded-lg px-3 flex items-center text-[10px] text-on-surface-variant"
+          >
+            Juan Pérez
+          </div>
+          <div
+            class="h-8 bg-surface-container rounded-lg px-3 flex items-center text-[10px] text-on-surface-variant"
+          >
+            juan@empresa.com
+          </div>
+          <button
+            class="w-full py-2 bg-primary text-on-primary text-xs font-bold rounded-lg mt-2"
+          >
+            Siguiente Paso
+          </button>
+        </div>
+      </div>
+      <!-- Floating UI Component: Subscription Card -->
+      <div
+        class="absolute -right-4 md:-right-16 top-1/4 z-30 w-64 md:w-72 bg-surface-container-highest/90 backdrop-blur-xl p-6 rounded-2xl border border-outline-variant/30 shadow-2xl animate-float-delayed"
+      >
+        <div class="flex justify-between items-start mb-6">
+          <div>
+            <div
+              class="text-[10px] opacity-60 uppercase tracking-widest font-bold"
+            >
+              Plan Actual
+            </div>
+            <div class="text-xl font-bold text-primary">Pro Plus</div>
+          </div>
+          <span class="material-symbols-outlined text-primary">verified</span>
+        </div>
+        <div class="space-y-4">
+          <div class="flex justify-between text-xs">
+            <span class="opacity-70">Proyectos Activos</span>
+            <span class="font-bold">12/15</span>
+          </div>
+          <div class="h-1.5 bg-surface-container rounded-full overflow-hidden">
+            <div class="h-full bg-primary w-[80%]"></div>
+          </div>
+          <div class="pt-2 border-t border-outline-variant/10">
+            <div class="text-[10px] opacity-50">
+              Siguiente Cobro: 15 de Oct, 2024
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Floating UI Component: Mini Analytics -->
+      <div
+        class="absolute left-1/2 -translate-x-1/2 -bottom-10 z-40 w-full max-w-sm bg-surface-container-highest/95 backdrop-blur-2xl p-5 rounded-2xl border border-primary/20 shadow-[0_20px_50px_rgba(76,215,246,0.15)]"
+      >
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-lg"
+              >analytics</span
+            >
+            <span class="text-xs font-bold">Rendimiento en Tiempo Real</span>
+          </div>
+          <span
+            class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full font-bold"
+            >+14.2%</span
+          >
+        </div>
+        <div class="flex items-end gap-1.5 h-16">
+          <div class="flex-1 bg-primary/20 rounded-t h-[40%]"></div>
+          <div class="flex-1 bg-primary/20 rounded-t h-[65%]"></div>
+          <div class="flex-1 bg-primary/30 rounded-t h-[55%]"></div>
+          <div class="flex-1 bg-primary/40 rounded-t h-[80%]"></div>
+          <div class="flex-1 bg-primary/60 rounded-t h-[45%]"></div>
+          <div class="flex-1 bg-primary rounded-t h-[95%]"></div>
+          <div class="flex-1 bg-primary/80 rounded-t h-[70%]"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bento Grid Features -->
+  <section class="max-w-7xl mx-auto px-6 mb-32">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Large Feature -->
+      <div
+        class="md:col-span-2 bg-surface-container-high rounded-xl p-8 relative overflow-hidden flex flex-col justify-between min-h-[400px]"
+      >
+        <div class="z-10">
+          <h3 class="font-headline text-2xl font-bold mb-4">
+            Gestión de Pagos Recurrentes
+          </h3>
+          <p class="text-on-surface-variant max-w-md">
+            El sistema se encarga de todo. Los clientes pueden suscribirse y el
+            software procesa los cobros mes a mes automáticamente, asegurando
+            que el servicio nunca se interrumpa.
           </p>
         </div>
-        <div class="relative max-w-5xl mx-auto h-[400px] md:h-[600px]">
-          <!-- Background Glow Effects -->
+        <div class="mt-8 flex justify-end">
           <div
-            class="absolute -top-20 -left-20 w-96 h-96 bg-primary/20 blur-[120px] rounded-full"
-          ></div>
-          <div
-            class="absolute -bottom-20 -right-20 w-96 h-96 bg-tertiary/20 blur-[120px] rounded-full"
-          ></div>
-          <!-- Main Dashboard Container -->
-          <div
-            class="relative z-10 bg-surface-container-high rounded-3xl border border-outline-variant/20 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] overflow-hidden h-full"
+            class="bg-surface-container-highest p-4 rounded-xl border border-outline-variant/10 w-full max-w-xs"
           >
-            <img
-              alt="Mockup del panel de alta fidelidad de WebExpress"
-              class="w-full h-full object-cover opacity-60"
-              data-alt="Interfaz moderna de panel de control en modo oscuro para herramienta de diseño web con visualizaciones de datos holográficas y componentes de UI elegantes"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy0ES8gFiIPYZqQEtlLRDd4Jq_awnUHYK8CHZFL485dxV_jWJxpaBZoRV0t_QYzGSAoommJyIiLGN1t1TpNb87vN1yhrrzn-DlP9oHpB2_M2f1yXic6dD5l4hW8LAlZWxiS3g9g3W1V6fgsoLPiJIVw2BQkBwJVpsRpCoRScHj_P3fOhSp_WpZC6VvTZXTA3EoI5VrczPgRtTwEedUCG_49oWeTNPGo8rcK6Ae-1IJLaMPehC9LhUPUsr2fFa69p7Ptu-SCDz5wuU"
-            />
-            <!-- Overlay Layer for Interaction Simulation -->
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-surface-container-high via-transparent to-transparent"
-            ></div>
-          </div>
-          <!-- Floating UI Component: Registration Step -->
-          <div
-            class="absolute -left-4 md:-left-12 top-10 z-30 w-64 md:w-80 bg-surface-container-highest/90 backdrop-blur-xl p-6 rounded-2xl border border-outline-variant/30 shadow-2xl animate-float"
-          >
-            <div class="flex items-center gap-3 mb-4">
-              <div
-                class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary"
+            <div class="flex justify-between items-center mb-4">
+              <span class="text-xs font-label opacity-60"
+                >INGRESO MENSUAL RECURRENTE</span
               >
-                <span class="material-symbols-outlined text-sm"
-                  >person_add</span
-                >
-              </div>
-              <span
-                class="text-xs font-bold uppercase tracking-widest text-primary"
-                >Paso 1: Onboarding</span
+              <span class="text-primary material-symbols-outlined"
+                >trending_up</span
               >
             </div>
-            <h4 class="font-headline font-bold text-lg mb-2">
-              Registro de Cliente
-            </h4>
-            <div class="space-y-2">
-              <div
-                class="h-8 bg-surface-container rounded-lg px-3 flex items-center text-[10px] text-on-surface-variant"
-              >
-                Juan Pérez
-              </div>
-              <div
-                class="h-8 bg-surface-container rounded-lg px-3 flex items-center text-[10px] text-on-surface-variant"
-              >
-                juan@empresa.com
-              </div>
-              <button
-                class="w-full py-2 bg-primary text-on-primary text-xs font-bold rounded-lg mt-2"
-              >
-                Siguiente Paso
-              </button>
-            </div>
-          </div>
-          <!-- Floating UI Component: Subscription Card -->
-          <div
-            class="absolute -right-4 md:-right-16 top-1/4 z-30 w-64 md:w-72 bg-surface-container-highest/90 backdrop-blur-xl p-6 rounded-2xl border border-outline-variant/30 shadow-2xl animate-float-delayed"
-          >
-            <div class="flex justify-between items-start mb-6">
-              <div>
-                <div
-                  class="text-[10px] opacity-60 uppercase tracking-widest font-bold"
-                >
-                  Plan Actual
-                </div>
-                <div class="text-xl font-bold text-primary">Pro Plus</div>
-              </div>
-              <span class="material-symbols-outlined text-primary"
-                >verified</span
-              >
-            </div>
-            <div class="space-y-4">
-              <div class="flex justify-between text-xs">
-                <span class="opacity-70">Proyectos Activos</span>
-                <span class="font-bold">12/15</span>
-              </div>
-              <div
-                class="h-1.5 bg-surface-container rounded-full overflow-hidden"
-              >
-                <div class="h-full bg-primary w-[80%]"></div>
-              </div>
-              <div class="pt-2 border-t border-outline-variant/10">
-                <div class="text-[10px] opacity-50">
-                  Siguiente Cobro: 15 de Oct, 2024
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Floating UI Component: Mini Analytics -->
-          <div
-            class="absolute left-1/2 -translate-x-1/2 -bottom-10 z-40 w-full max-w-sm bg-surface-container-highest/95 backdrop-blur-2xl p-5 rounded-2xl border border-primary/20 shadow-[0_20px_50px_rgba(76,215,246,0.15)]"
-          >
-            <div class="flex items-center justify-between mb-4">
-              <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-primary text-lg"
-                  >analytics</span
-                >
-                <span class="text-xs font-bold"
-                  >Rendimiento en Tiempo Real</span
-                >
-              </div>
-              <span
-                class="text-[10px] bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full font-bold"
-                >+14.2%</span
-              >
-            </div>
-            <div class="flex items-end gap-1.5 h-16">
-              <div class="flex-1 bg-primary/20 rounded-t h-[40%]"></div>
-              <div class="flex-1 bg-primary/20 rounded-t h-[65%]"></div>
-              <div class="flex-1 bg-primary/30 rounded-t h-[55%]"></div>
-              <div class="flex-1 bg-primary/40 rounded-t h-[80%]"></div>
-              <div class="flex-1 bg-primary/60 rounded-t h-[45%]"></div>
-              <div class="flex-1 bg-primary rounded-t h-[95%]"></div>
-              <div class="flex-1 bg-primary/80 rounded-t h-[70%]"></div>
+            <div class="text-2xl font-bold mb-2">$42,850.00</div>
+            <div class="h-2 bg-surface-container rounded-full overflow-hidden">
+              <div class="h-full bg-primary w-3/4"></div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Bento Grid Features -->
-      <section class="max-w-7xl mx-auto px-6 mb-32">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Large Feature -->
-          <div
-            class="md:col-span-2 bg-surface-container-high rounded-xl p-8 relative overflow-hidden flex flex-col justify-between min-h-[400px]"
-          >
-            <div class="z-10">
-              <h3 class="font-headline text-2xl font-bold mb-4">
-                Gestión de Suscripciones
-              </h3>
-              <p class="text-on-surface-variant max-w-md">
-                Facturación integrada con Stripe y gestión de niveles.
-                Administre mejoras, cambios de plan y periodos de prueba sin
-                intervención manual.
-              </p>
-            </div>
-            <div class="mt-8 flex justify-end">
-              <div
-                class="bg-surface-container-highest p-4 rounded-xl border border-outline-variant/10 w-full max-w-xs"
-              >
-                <div class="flex justify-between items-center mb-4">
-                  <span class="text-xs font-label opacity-60"
-                    >INGRESO MENSUAL RECURRENTE</span
-                  >
-                  <span class="text-primary material-symbols-outlined"
-                    >trending_up</span
-                  >
-                </div>
-                <div class="text-2xl font-bold mb-2">$42,850.00</div>
-                <div
-                  class="h-2 bg-surface-container rounded-full overflow-hidden"
-                >
-                  <div class="h-full bg-primary w-3/4"></div>
-                </div>
-              </div>
-            </div>
-            <div class="absolute top-0 right-0 p-8 opacity-5">
-              <span class="material-symbols-outlined text-9xl">payments</span>
-            </div>
-          </div>
-          <!-- Small Feature 1 -->
-          <div
-            class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/10 flex flex-col items-center text-center justify-center"
-          >
-            <div
-              class="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6"
-            >
-              <span class="material-symbols-outlined text-3xl"
-                >verified_user</span
-              >
-            </div>
-            <h3 class="font-headline text-xl font-bold mb-3">
-              Onboarding Automatizado
-            </h3>
-            <p class="text-sm text-on-surface-variant">
-              Registro de usuarios seguro y recepción de proyectos mediante
-              lógica de formularios inteligente.
-            </p>
-          </div>
-          <!-- Small Feature 2 -->
-          <div
-            class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/10 flex flex-col items-center text-center justify-center"
-          >
-            <div
-              class="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6"
-            >
-              <span class="material-symbols-outlined text-3xl">sync</span>
-            </div>
-            <h3 class="font-headline text-xl font-bold mb-3">
-              Flujo de Trabajo de Diseño
-            </h3>
-            <p class="text-sm text-on-surface-variant">
-              Seguimiento de proyectos en tiempo real y bucles de
-              retroalimentación para máxima eficiencia.
-            </p>
-          </div>
-          <!-- Medium Feature -->
-          <div
-            class="md:col-span-2 bg-surface-container-high rounded-xl p-8 flex items-center gap-8 border border-outline-variant/10"
-          >
-            <div class="flex-1">
-              <h3 class="font-headline text-2xl font-bold mb-4">
-                Mando Centralizado
-              </h3>
-              <p class="text-on-surface-variant">
-                Una única fuente de verdad para todos los activos del proyecto,
-                comunicaciones con clientes e historial de facturación.
-              </p>
-            </div>
-            <div class="hidden md:block">
-              <div class="grid grid-cols-2 gap-3">
-                <div class="h-20 w-20 rounded-lg bg-surface-variant"></div>
-                <div class="h-20 w-20 rounded-lg bg-surface-variant"></div>
-                <div class="h-20 w-20 rounded-lg bg-surface-variant"></div>
-                <div
-                  class="h-20 w-20 rounded-lg bg-primary/20 flex items-center justify-center text-primary"
-                >
-                  <span class="material-symbols-outlined">add</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="absolute top-0 right-0 p-8 opacity-5">
+          <span class="material-symbols-outlined text-9xl">payments</span>
         </div>
-      </section>
-      <!-- Tech Stack -->
-      <section class="bg-surface-container-low py-24 mb-32">
-        <div class="max-w-7xl mx-auto px-6">
-          <div class="text-center mb-16">
-            <h2 class="font-headline text-3xl font-bold mb-4">
-              Construido sobre Arquitectura Probada
-            </h2>
-            <p class="text-on-surface-variant">
-              Aprovechando las tecnologías más estables y escalables del mundo.
-            </p>
-          </div>
-          <div
-            class="flex flex-wrap justify-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
-          >
-            <div class="flex flex-col items-center gap-3">
-              <div
-                class="h-16 w-16 bg-surface-container-highest rounded-xl flex items-center justify-center"
-              >
-                <span class="material-symbols-outlined text-4xl">php</span>
-              </div>
-              <span class="font-label text-xs uppercase tracking-widest"
-                >WordPress</span
-              >
-            </div>
-            <div class="flex flex-col items-center gap-3">
-              <div
-                class="h-16 w-16 bg-surface-container-highest rounded-xl flex items-center justify-center"
-              >
-                <span class="material-symbols-outlined text-4xl">php</span>
-              </div>
-              <span class="font-label text-xs uppercase tracking-widest"
-                >PHP</span
-              >
-            </div>
-            <div class="flex flex-col items-center gap-3">
-              <div
-                class="h-16 w-16 bg-surface-container-highest rounded-xl flex items-center justify-center"
-              >
-                <span class="material-symbols-outlined text-4xl">database</span>
-              </div>
-              <span class="font-label text-xs uppercase tracking-widest"
-                >MySQL</span
-              >
-            </div>
-            <div class="flex flex-col items-center gap-3">
-              <div
-                class="h-16 w-16 bg-surface-container-highest rounded-xl flex items-center justify-center"
-              >
-                <span class="material-symbols-outlined text-4xl"
-                  >grid_view</span
-                >
-              </div>
-              <span class="font-label text-xs uppercase tracking-widest"
-                >Elementor</span
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Final CTA -->
-      <section class="max-w-7xl mx-auto px-6 mb-32">
+      </div>
+      <!-- Small Feature 1 -->
+      <div
+        class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/10 flex flex-col items-center text-center justify-center"
+      >
         <div
-          class="bg-surface-container-highest rounded-3xl p-12 md:p-20 text-center relative overflow-hidden"
+          class="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6"
         >
-          <div class="relative z-10">
-            <h2 class="font-headline text-4xl md:text-5xl font-bold mb-8">
-              ¿Listo para Escalar tus Operaciones de Diseño?
-            </h2>
-            <button
-              class="primary-gradient text-on-primary px-10 py-4 rounded-full font-manrope font-bold text-lg scale-95 active:scale-90 transition-transform hover:shadow-[0_0_30px_rgba(76,215,246,0.4)]"
-            >
-              Inicia tu Proyecto
-            </button>
-          </div>
-          <!-- Background Decorative Element -->
-          <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 blur-[120px] rounded-full pointer-events-none"
-          ></div>
+          <span class="material-symbols-outlined text-3xl">verified_user</span>
         </div>
-      </section>
-    </main>
+        <h3 class="font-headline text-xl font-bold mb-3">
+          Panel de Cliente Amigable
+        </h3>
+        <p class="text-sm text-on-surface-variant">
+          Diseñamos un espacio privado donde cada usuario puede ver el estado de
+          su plan, descargar sus facturas y gestionar sus datos sin necesidad de
+          asistencia técnica.
+        </p>
+      </div>
+      <!-- Small Feature 2 -->
+      <div
+        class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/10 flex flex-col items-center text-center justify-center"
+      >
+        <div
+          class="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-6"
+        >
+          <span class="material-symbols-outlined text-3xl">sync</span>
+        </div>
+        <h3 class="font-headline text-xl font-bold mb-3">
+          Control de Planes y Estados
+        </h3>
+        <p class="text-sm text-on-surface-variant">
+          El sistema identifica instantáneamente si una suscripción está activa
+          o vencida, permitiendo una gestión eficiente de los servicios
+          contratados de manera 100% digital.
+        </p>
+      </div>
+      <!-- Medium Feature -->
+      <div
+        class="md:col-span-2 bg-surface-container-high rounded-xl p-8 flex items-center gap-8 border border-outline-variant/10"
+      >
+        <div class="flex-1">
+          <h3 class="font-headline text-2xl font-bold mb-4">
+            Automatización de Procesos
+          </h3>
+          <p class="text-on-surface-variant">
+            Desde el registro inicial hasta la renovación mensual, toda la
+            lógica del negocio está automatizada para ahorrar tiempo
+            administrativo y evitar errores manuales.
+          </p>
+        </div>
+        <div class="hidden md:block">
+          <div class="grid grid-cols-2 gap-3">
+            <div class="h-20 w-20 rounded-lg bg-surface-variant"></div>
+            <div class="h-20 w-20 rounded-lg bg-surface-variant"></div>
+            <div class="h-20 w-20 rounded-lg bg-surface-variant"></div>
+            <div
+              class="h-20 w-20 rounded-lg bg-primary/20 flex items-center justify-center text-primary"
+            >
+              <span class="material-symbols-outlined">add</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tech Stack -->
+  <section class="bg-surface-container-low py-24 mb-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="font-headline text-3xl font-bold mb-4">
+          Tecnologías Usadas
+        </h2>
+        <p class="text-on-surface-variant text-lg mb-12 max-w-2xl mx-auto">
+          Combinamos lo mejor del diseño visual con la potencia del desarrollo a
+          medida para un sistema escalable.
+        </p>
+      </div>
+      <div
+        class="flex flex-wrap justify-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
+      >
+        <div class="flex flex-col items-center gap-3">
+          <div
+            class="h-16 w-16 bg-surface-container-highest rounded-xl flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-4xl">grid_view</span>
+          </div>
+          <span class="font-label text-xs uppercase tracking-widest"
+            >Elementor</span
+          >
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div
+            class="h-16 w-16 bg-surface-container-highest rounded-xl flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-4xl">code_blocks</span>
+          </div>
+          <span class="font-label text-xs uppercase tracking-widest"
+            >Python</span
+          >
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div
+            class="h-16 w-16 bg-surface-container-highest rounded-xl flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-4xl">code_xml</span>
+          </div>
+          <span class="font-label text-xs uppercase tracking-widest"
+            >Flask</span
+          >
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <div
+            class="h-16 w-16 bg-surface-container-highest rounded-xl flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined text-4xl">database</span>
+          </div>
+          <span class="font-label text-xs uppercase tracking-widest"
+            >MySQL</span
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Final CTA -->
+  <section class="py-16 px-6 md:px-12 text-center max-w-7xl mx-auto">
+    <div
+      class="p-20 rounded-[3rem] bg-gradient-to-br from-surface-container-high to-surface-container relative overflow-hidden"
+    >
+      <div
+        class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full"
+      ></div>
+      <div class="relative z-10">
+        <h2
+          class="font-headline text-4xl md:text-5xl font-bold mb-8 leading-tight"
+        >
+          ¿Listo Para Llevar tu Negocio al Siguiente Nivel?
+        </h2>
+        <p class="text-on-surface-variant text-lg mb-12 max-w-2xl mx-auto">
+          Agenda una consultoría gratuita y descubramos juntos cómo la
+          tecnología puede potenciar tus ganancias.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+          <button
+            class="bg-primary text-on-primary-fixed px-12 py-5 rounded-full font-bold text-lg hover:shadow-[0_0_40px_rgba(76,215,246,0.3)] transition-all"
+          >
+            Hablemos de tu proyecto
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 {% endblock %}
